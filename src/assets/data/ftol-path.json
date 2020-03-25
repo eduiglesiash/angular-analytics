@@ -1,0 +1,33 @@
+{
+  "images": {
+    "bg_tarifasmoviles_micro_desktop": "/c/tienda/tol/img/3000001818040/background-dark-tarifas-micro-desktop?v=20200217051752",
+    "bg_tarifasmoviles_micro_mobile": "/c/tienda/tol/img/3000001818067/background-dark-tarifas-micro-mobile?v=20200217052106",
+    "bg_tarifasone_micro_desktop": "/c/tienda/tol/img/3000001817991/background-dark-one-micro-desktop?v=20200217052238",
+    "bg_tarifasone_micro_mobile": "/c/tienda/tol/img/3000001818014/background-dark-one-micro-mobile?v=20200217052409",
+    "bg_tarifasfibra_micro_desktop": "/c/tienda/tol/img/3000001817821/background-dark-fibra-micro-desktop?v=20200217052644",
+    "bg_tarifasfibra_micro_mobile": "/c/tienda/tol/img/3000001817970/background-dark-fibra-micro-mobile?v=20200217052833",
+    "bg_tarifasmoviles_partis_desktop": "/c/tienda/tol/static/img/modules/icons/png/background-dark-tarifas-desktop.png?v=20200219045544",
+    "bg_tarifasmoviles_partis_mobile": "/c/tienda/tol/static/img/modules/icons/png/background-dark-tarifas-mobile.png?v=20200219045728",
+    "bg_tarifasmoviles_detalle_micro_mobile": "/c/tienda/tol/static/img/cabecera-fichas-moviles-mobile.jpg?v=20200217054226",
+    "bg_tarifasone_partis_desktop": "/c/tienda/tol/static/img/modules/icons/png/background-dark-one-desktop.png?v=20200217054546",
+    "bg_tarifasone_partis_mobile": "/c/tienda/tol/static/img/modules/icons/png/background-dark-one-mobile.png?v=20200217054914",
+    "bg_tarifasone_detalle_micro_mobile": "/c/tienda/tol/ftol/static/img/cabecera-ficha-convergente-soho-mobile.jpg?v=20200220011406",
+    "bg_tarifasfibra_partis_desktop": "/c/tienda/tol/static/img/modules/icons/png/background-dark-fibra-desktop.png?v=20200217055418",
+    "bg_tarifasfibra_partis_mobile": "/c/tienda/tol/static/img/modules/icons/png/background-dark-fibra-mobile.png?v=20200217055813"
+  },
+  "htmls": {
+    "ftol_rates_movil_partis_html": "/c/tienda/tol/static/html/rates-partis.html?v=20200306022428",
+    "ftol_rates_movil_micro_html": "/c/tienda/tol/static/html/rates-micro.html?v=20200318121642",
+    "ftol_rates_one_partis_html": "/c/tienda/tol/static/html/ftol_rates-one_partis.html?v=20200228024405",
+    "ftol_rates_one_micro_html": "/c/tienda/tol/static/html/ftol_rates-one_micro.html?v=20200318121710",
+    "ftol_rates_fibra_partis_html": "/c/tienda/tol/static/html/ftol_rates-fibra_partis.html?v=20200319053804",
+    "ftol_rates_fibra_micro_html": "/c/tienda/tol/static/html/ftol_rates-fibra_micro.html?v=20200318121600",
+    "ftol_rates_4g_partis_html": "/c/tienda/tol/static/html/ftol_rates-4g_partis.html?v=20200305052845",
+    "ftol_rates_4g_micro_html": "/c/tienda/tol/static/html/ftol_rates-4g_micro.html?v=20191211115707",
+    "ftol_catalogo_moviles_micro_html": "/c/tienda/tol/static/html/micro.html?v=20200318121521",
+    "ftol_catalogo_moviles_partis_html": "/ss/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1700014782855&ssbinary=true&v=20200319123106"
+  },
+  "config": {
+    "stored_address_time": "15552000000"
+  }
+}

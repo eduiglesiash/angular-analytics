@@ -1,0 +1,271 @@
+[
+  {
+    "id": 3,
+    "name": "Apple",
+    "description": "Apple",
+    "image": {
+      "id": 14,
+      "uri": "/c/tienda/tol/img/1435594579052/marca_iphone",
+      "alternate": "Apple"
+    },
+    "flagPublicacion": true,
+    "position": 0
+  },
+  {
+    "id": 1,
+    "name": "Samsung",
+    "description": "Samsung",
+    "image": {
+      "id": 3079702,
+      "uri": "/c/tienda/tol/img/5555550094849/marca_samsung",
+      "alternate": "Samsung"
+    },
+    "flagPublicacion": true,
+    "position": 1
+  },
+  {
+    "id": 319302,
+    "name": "Huawei",
+    "description": "Huawei",
+    "image": {
+      "id": 319303,
+      "uri": "/c/tienda/tol/img/5555550095204/marca_huawei",
+      "alternate": "Huawei"
+    },
+    "flagPublicacion": true,
+    "position": 2
+  },
+  {
+    "id": 30375461,
+    "name": "Xiaomi",
+    "description": "Xiaomi",
+    "image": {
+      "id": 30375462,
+      "uri": "/c/tienda/tol/img/1435634731731/marca_xiaomi",
+      "alternate": "Xiaomi"
+    },
+    "flagPublicacion": true,
+    "position": 3
+  },
+  {
+    "id": 6,
+    "name": "LG",
+    "description": "LG",
+    "image": {
+      "id": 17,
+      "uri": "/c/tienda/tol/img/1435596622348/marca_lg",
+      "alternate": "LG"
+    },
+    "flagPublicacion": true,
+    "position": 4
+  },
+  {
+    "id": 319281,
+    "name": "Sony",
+    "description": "Sony",
+    "image": {
+      "id": 319282,
+      "uri": "/c/tienda/tol/img/1435596623987/marca_sony",
+      "alternate": "Sony"
+    },
+    "flagPublicacion": true,
+    "position": 5
+  },
+  {
+    "id": 6823508,
+    "name": "Nokia",
+    "description": "Nokia",
+    "image": {
+      "id": 8372266,
+      "uri": "/c/tienda/tol/img/1435611220075/marca_nokia",
+      "alternate": "Nokia"
+    },
+    "flagPublicacion": true,
+    "position": 6
+  },
+  {
+    "id": 102251086,
+    "name": "Motorola",
+    "description": "Motorola",
+    "image": {
+      "id": 102251087,
+      "uri": "/c/tienda/tol/img/1435659345029/marca-motorola",
+      "alternate": "Motorola"
+    },
+    "flagPublicacion": true,
+    "position": 7
+  },
+  {
+    "id": 7887000,
+    "name": "ZTE",
+    "description": "ZTE",
+    "image": {
+      "id": 8372267,
+      "uri": "/c/tienda/tol/img/1435611220109/marca_zte",
+      "alternate": "ZTE"
+    },
+    "flagPublicacion": true,
+    "position": 8
+  },
+  {
+    "id": 8954146,
+    "name": "HTC",
+    "description": "HTC",
+    "image": {
+      "id": 8954147,
+      "uri": "/c/tienda/tol/img/1435612082559/marca_htc",
+      "alternate": "HTC"
+    },
+    "flagPublicacion": true,
+    "position": 9
+  },
+  {
+    "id": 117504662,
+    "name": "Palm",
+    "description": "Palm",
+    "image": {
+      "id": 117504663,
+      "uri": "/c/tienda/tol/img/1435663462882/marca_palm",
+      "alternate": "Palm"
+    },
+    "flagPublicacion": true,
+    "position": 10
+  },
+  {
+    "id": 331072,
+    "name": "Vodafone",
+    "description": "Vodafone",
+    "image": {
+      "id": 331073,
+      "uri": "/c/tienda/tol/img/1435611220055/marca_vodafone_rebranding",
+      "alternate": "Vodafone"
+    },
+    "flagPublicacion": true,
+    "position": 11
+  },
+  {
+    "id": 319401,
+    "name": "Blackberry",
+    "description": "Blackberry",
+    "image": {
+      "id": 3079787,
+      "uri": "/c/tienda/tol/img/5555550094886/marca_bb",
+      "alternate": "Blackberry"
+    },
+    "flagPublicacion": true,
+    "position": 12
+  },
+  {
+    "id": 331082,
+    "name": "BQ",
+    "description": "BQ",
+    "image": {
+      "id": 3079484,
+      "uri": "/c/tienda/tol/img/5555550094870/marca_bq",
+      "alternate": "BQ"
+    },
+    "flagPublicacion": true,
+    "position": 13
+  },
+  {
+    "id": 323563,
+    "name": "Alcatel",
+    "description": "Alcatel",
+    "image": {
+      "id": 331265,
+      "uri": "/c/tienda/tol/img/1435596620476/marca_alcatel",
+      "alternate": "Alcatel"
+    },
+    "flagPublicacion": true,
+    "position": 14
+  },
+  {
+    "id": 39311901,
+    "name": "Wiko",
+    "description": "Wiko",
+    "image": {
+      "id": 39311902,
+      "uri": "/c/tienda/tol/img/1435637952377/marca_wiko",
+      "alternate": "Wiko"
+    },
+    "flagPublicacion": true,
+    "position": 15
+  },
+  {
+    "id": 2,
+    "name": "Microsoft",
+    "description": "Microsoft",
+    "image": {
+      "id": 13,
+      "uri": "/c/tienda/tol/img/1435596623226/marca_microsoft",
+      "alternate": "Microsoft"
+    },
+    "flagPublicacion": true,
+    "position": 16
+  },
+  {
+    "id": 6823510,
+    "name": "MobiWire",
+    "description": "MobiWire",
+    "image": {
+      "id": 8954144,
+      "uri": "/c/tienda/tol/img/1435612082468/marca_Mobiwire",
+      "alternate": "MobiWire"
+    },
+    "flagPublicacion": true,
+    "position": 17
+  },
+  {
+    "id": 40347903,
+    "name": "Land Rover",
+    "description": "Land Rover",
+    "image": {
+      "id": 40347904,
+      "uri": "/c/tienda/tol/img/1435638267028/marca_land_rover",
+      "alternate": "Land Rover"
+    },
+    "flagPublicacion": true,
+    "position": 18
+  },
+  {
+    "id": 7301588,
+    "name": "CoComm",
+    "description": "CoComm",
+    "image": {
+      "id": 8954145,
+      "uri": "/c/tienda/tol/img/1435612082528/marca_CoComm",
+      "alternate": "CoComm"
+    },
+    "flagPublicacion": true,
+    "position": 19
+  },
+  {
+    "id": 6823522,
+    "name": "NEO",
+    "description": "Neo",
+    "flagPublicacion": true,
+    "position": 20
+  },
+  {
+    "id": 222095584,
+    "name": "OPPO",
+    "description": "OPPO",
+    "image": {
+      "id": 222095585,
+      "uri": "/c/tienda/tol/img/1500058094523/marca_oppo",
+      "alternate": "OPPO"
+    },
+    "flagPublicacion": true
+  },
+  {
+    "id": 221780767,
+    "name": "Fairphone",
+    "description": "Fairphone",
+    "image": {
+      "id": 221780768,
+      "uri": "/c/tienda/tol/img/1500048687808/marca-fairphone",
+      "alternate": "Fairphone"
+    },
+    "flagPublicacion": true
+  }
+]
