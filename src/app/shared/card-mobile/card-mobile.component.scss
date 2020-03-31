@@ -1,0 +1,48 @@
+:host {
+  width: 340px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  height: 100%;
+  position: relative;
+  text-align: left;
+  padding: 16px;
+  &__picture {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    > img {
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__title{
+    font-size: 21px;
+    font-family: VodafoneLight, Arial, Helvetica, sans-serif;
+  }
+  &__content {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    padding-top: 16px;
+  }
+  &__info-price{
+    align-self: end;
+  }
+  &__bold {
+    font-size: 24px;
+    font-family: VodafoneRgBold, Arial, sans-serif;
+  }
+  &__paid{
+    font-family: VodafoneLight, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }
+}
+

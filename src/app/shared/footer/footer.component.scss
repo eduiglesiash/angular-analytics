@@ -1,0 +1,1123 @@
+.MDD_autoncontent.MDDfooter .btn:focus, .MDD_autoncontent.MDDfooter .link-big:focus, .MDD_autoncontent.MDDfooter .link-body:focus, .MDD_autoncontent.MDDfooter .link:focus, .MDD_autoncontent.MDDfooter a:focus {
+  outline: #007c92 solid 3px
+}
+
+.MDD_autoncontent.MDDfooter .wrapper, .MDD_autoncontent.MDDfooter svg:not(:root) {
+  overflow: hidden
+}
+
+.MDD_autoncontent.MDDfooter .vfc-layout::after, .MDD_autoncontent.MDDfooter .vfc-layout::before {
+  content: " ";
+  display: table
+}
+
+.MDD_autoncontent.MDDfooter .vfc-layout::after {
+  clear: both
+}
+
+html {
+  line-height: 1
+}
+
+.MDD_autoncontent.MDDfooter {
+  color: #333;
+  font-family: 'VodafoneRegular';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100% /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+}
+
+.MDD_autoncontent.MDDfooter a, .MDD_autoncontent.MDDfooter abbr, .MDD_autoncontent.MDDfooter acronym, .MDD_autoncontent.MDDfooter address, .MDD_autoncontent.MDDfooter applet, .MDD_autoncontent.MDDfooter article, .MDD_autoncontent.MDDfooter aside, .MDD_autoncontent.MDDfooter audio, .MDD_autoncontent.MDDfooter b, .MDD_autoncontent.MDDfooter big, .MDD_autoncontent.MDDfooter blockquote, .MDD_autoncontent.MDDfooter canvas, .MDD_autoncontent.MDDfooter caption, .MDD_autoncontent.MDDfooter center, .MDD_autoncontent.MDDfooter cite, .MDD_autoncontent.MDDfooter code, .MDD_autoncontent.MDDfooter dd, .MDD_autoncontent.MDDfooter del, .MDD_autoncontent.MDDfooter details, .MDD_autoncontent.MDDfooter dfn, .MDD_autoncontent.MDDfooter div, .MDD_autoncontent.MDDfooter dl, .MDD_autoncontent.MDDfooter dt, .MDD_autoncontent.MDDfooter em, .MDD_autoncontent.MDDfooter embed, .MDD_autoncontent.MDDfooter fieldset, .MDD_autoncontent.MDDfooter figcaption, .MDD_autoncontent.MDDfooter figure, .MDD_autoncontent.MDDfooter footer, .MDD_autoncontent.MDDfooter form, .MDD_autoncontent.MDDfooter h1, .MDD_autoncontent.MDDfooter h2, .MDD_autoncontent.MDDfooter h3, .MDD_autoncontent.MDDfooter h4, .MDD_autoncontent.MDDfooter h5, .MDD_autoncontent.MDDfooter h6, .MDD_autoncontent.MDDfooter header, .MDD_autoncontent.MDDfooter hgroup, .MDD_autoncontent.MDDfooter i, .MDD_autoncontent.MDDfooter iframe, .MDD_autoncontent.MDDfooter img, .MDD_autoncontent.MDDfooter ins, .MDD_autoncontent.MDDfooter kbd, .MDD_autoncontent.MDDfooter label, .MDD_autoncontent.MDDfooter legend, .MDD_autoncontent.MDDfooter li, .MDD_autoncontent.MDDfooter mark, .MDD_autoncontent.MDDfooter menu, .MDD_autoncontent.MDDfooter nav, .MDD_autoncontent.MDDfooter object, .MDD_autoncontent.MDDfooter ol, .MDD_autoncontent.MDDfooter output, .MDD_autoncontent.MDDfooter p, .MDD_autoncontent.MDDfooter pre, .MDD_autoncontent.MDDfooter q, .MDD_autoncontent.MDDfooter ruby, .MDD_autoncontent.MDDfooter s, .MDD_autoncontent.MDDfooter samp, .MDD_autoncontent.MDDfooter section, .MDD_autoncontent.MDDfooter small, .MDD_autoncontent.MDDfooter span, .MDD_autoncontent.MDDfooter strike, .MDD_autoncontent.MDDfooter strong, .MDD_autoncontent.MDDfooter sub, .MDD_autoncontent.MDDfooter summary, .MDD_autoncontent.MDDfooter sup, .MDD_autoncontent.MDDfooter table, .MDD_autoncontent.MDDfooter tbody, .MDD_autoncontent.MDDfooter td, .MDD_autoncontent.MDDfooter tfoot, .MDD_autoncontent.MDDfooter th, .MDD_autoncontent.MDDfooter thead, .MDD_autoncontent.MDDfooter time, .MDD_autoncontent.MDDfooter tr, .MDD_autoncontent.MDDfooter tt, .MDD_autoncontent.MDDfooter u, .MDD_autoncontent.MDDfooter ul, .MDD_autoncontent.MDDfooter var, .MDD_autoncontent.MDDfooter video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline
+}
+
+.MDD_autoncontent.MDDfooter a img, .MDD_autoncontent.MDDfooter abbr[title] {
+  border: 0
+}
+
+.MDD_autoncontent.MDDfooter::before {
+  content: "desktop";
+  display: none
+}
+
+@media only screen and (max-width: 1420px) {
+  .MDD_autoncontent.MDDfooter .MDD_autoncontent::before {
+    content: "tablet"
+  }
+}
+
+@media only screen and (min-width: 970px) {
+  .MDD_autoncontent.MDDfooter #media-layout {
+    display: none
+  }
+}
+
+.MDD_autoncontent.MDDfooter .disable-input label, .MDD_autoncontent.MDDfooter .disable-input legend {
+  color: #9a9a9a
+}
+
+.MDD_autoncontent.MDDfooter .disable-input .enable-option label {
+  color: #333
+}
+
+.MDD_autoncontent.MDDfooter ol, .MDD_autoncontent.MDDfooter ul {
+  list-style: none
+}
+
+.MDD_autoncontent.MDDfooter table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+.MDD_autoncontent.MDDfooter caption, .MDD_autoncontent.MDDfooter td, .MDD_autoncontent.MDDfooter th {
+  text-align: left;
+  font-weight: 400;
+  vertical-align: middle
+}
+
+.MDD_autoncontent.MDDfooter blockquote, .MDD_autoncontent.MDDfooter q {
+  quotes: none
+}
+
+.MDD_autoncontent.MDDfooter blockquote:after, .MDD_autoncontent.MDDfooter blockquote:before, .MDD_autoncontent.MDDfooter q:after, .MDD_autoncontent.MDDfooter q:before {
+  content: "";
+  content: none
+}
+
+.MDD_autoncontent.MDDfooter article, .MDD_autoncontent.MDDfooter aside, .MDD_autoncontent.MDDfooter details, .MDD_autoncontent.MDDfooter figcaption, .MDD_autoncontent.MDDfooter figure, .MDD_autoncontent.MDDfooter footer, .MDD_autoncontent.MDDfooter header, .MDD_autoncontent.MDDfooter hgroup, .MDD_autoncontent.MDDfooter menu, .MDD_autoncontent.MDDfooter nav, .MDD_autoncontent.MDDfooter section, .MDD_autoncontent.MDDfooter summary {
+  display: block
+}
+
+.MDD_autoncontent.MDDfooter * {
+  box-sizing: border-box
+}
+
+.MDD_autoncontent.MDDfooter .spring {
+  min-width: 320px;
+  width: 100%
+}
+
+.MDD_autoncontent.MDDfooter .belt {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 10px
+}
+
+.MDD_autoncontent.MDDfooter .access {
+  left: -9999em;
+  position: absolute
+}
+
+.MDD_autoncontent.MDDfooter .access.debug {
+  position: relative;
+  left: 0;
+  background-color: #ff0
+}
+
+.MDD_autoncontent.MDDfooter img {
+  display: inline-block;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic
+}
+
+.MDD_autoncontent.MDDfooter p {
+  line-height: 1.5;
+  margin-bottom: 15px
+}
+
+.MDD_autoncontent.MDDfooter .link, .MDD_autoncontent.MDDfooter .link-big, .MDD_autoncontent.MDDfooter .link-body, .MDD_autoncontent.MDDfooter a {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer
+}
+
+.MDD_autoncontent.MDDfooter .btn:focus, .MDD_autoncontent.MDDfooter .btn:visited, .MDD_autoncontent.MDDfooter .footer .tg-display a {
+  color: #fff
+}
+
+.MDD_autoncontent.MDDfooter .link-big:focus, .MDD_autoncontent.MDDfooter .link-big:hover, .MDD_autoncontent.MDDfooter .link-body, .MDD_autoncontent.MDDfooter .link-body:focus, .MDD_autoncontent.MDDfooter .link-body:hover, .MDD_autoncontent.MDDfooter .link:focus, .MDD_autoncontent.MDDfooter .link:hover, .MDD_autoncontent.MDDfooter a:focus, .MDD_autoncontent.MDDfooter a:hover, .MDD_autoncontent.MDDfooter p a {
+  text-decoration: underline
+}
+
+.MDD_autoncontent.MDDfooter .mouse-active .btn:focus, .MDD_autoncontent.MDDfooter .mouse-active a:focus, .MDD_autoncontent.MDDfooter a:active, .MDD_autoncontent.MDDfooter a:hover {
+  outline: 0
+}
+
+.MDD_autoncontent.MDDfooter .btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #9c2aa0;
+  color: #fff;
+  display: inline-block;
+  font-weight: 400;
+  margin: 0 6px 10px 0;
+  text-align: center;
+  line-height: 1;
+  width: 100%
+}
+
+.MDD_autoncontent.MDDfooter .btn:last-child {
+  margin-right: 0
+}
+
+@media only screen and (min-width: 970px) {
+  .MDD_autoncontent.MDDfooter .btn {
+    width: auto;
+    font-size: 20px;
+    padding: 10px 20px 11px
+  }
+  .MDD_autoncontent.MDDfooter .btn:focus, .MDD_autoncontent.MDDfooter .btn:hover {
+    cursor: pointer
+  }
+}
+
+.MDD_autoncontent.MDDfooter .footer .fo-social a:after {
+  content: none
+}
+
+.MDD_autoncontent.MDDfooter .footer li {
+  margin: 1em 1em 1.5em
+}
+
+.MDD_autoncontent.MDDfooter .footer {
+  background: #333;
+  color: #a9a9a9;
+  font-size: 14px
+}
+
+.MDD_autoncontent.MDDfooter .footer a, .MDD_autoncontent.MDDfooter .footer a:hover, .MDD_autoncontent.MDDfooter .footer a:visited {
+  color: #ccc;
+  text-decoration: none;
+  line-height: 18.2px;
+  font-family: Arial, sans-serif
+}
+
+.MDD_autoncontent.MDDfooter .footer a:focus, .MDD_autoncontent.MDDfooter .footer a:hover, .MDD_autoncontent.MDDfooter .footer a:visited {
+  text-decoration: underline
+}
+
+.MDD_autoncontent.MDDfooter .footer .fo-social {
+  margin-top: 1em;
+  margin-bottom: 0
+}
+
+.MDD_autoncontent.MDDfooter .footer .fo-social li {
+  float: left;
+  padding: 0 .7143em .7143em 0
+}
+
+.MDD_autoncontent.MDDfooter .footer .fo-social li:last-child {
+  padding: 0
+}
+
+@media all and (min-width: 970px) {
+  .MDD_autoncontent.MDDfooter .footer li {
+    margin: .3333em 0
+  }
+  .MDD_autoncontent.MDDfooter .footer li.bold {
+    margin-top: 1em
+  }
+  .MDD_autoncontent.MDDfooter .footer h3 {
+    color: #fff
+  }
+  .MDD_autoncontent.MDDfooter .fo-social li {
+    padding: 0 0 0 1.5em
+  }
+}
+
+@media all and (max-width: 969px) {
+  .MDD_autoncontent.MDDfooter .footer, .MDD_autoncontent.MDDfooter .no-js .footer {
+    font-size: 12px
+  }
+}
+
+.MDD_autoncontent.MDDfooter html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
+}
+
+.MDD_autoncontent.MDDfooter body {
+  margin: 0
+}
+
+.MDD_autoncontent.MDDfooter article, .MDD_autoncontent.MDDfooter aside, .MDD_autoncontent.MDDfooter details, .MDD_autoncontent.MDDfooter figcaption, .MDD_autoncontent.MDDfooter figure, .MDD_autoncontent.MDDfooter footer, .MDD_autoncontent.MDDfooter header, .MDD_autoncontent.MDDfooter hgroup, .MDD_autoncontent.MDDfooter main, .MDD_autoncontent.MDDfooter menu, .MDD_autoncontent.MDDfooter nav, .MDD_autoncontent.MDDfooter section, .MDD_autoncontent.MDDfooter summary {
+  display: block
+}
+
+.MDD_autoncontent.MDDfooter a {
+  background-color: transparent;
+  color: inherit;
+  display: inline-block;
+  text-decoration: none
+}
+
+.MDD_autoncontent.MDDfooter dfn {
+  font-style: italic
+}
+
+.MDD_autoncontent.MDDfooter sub {
+  bottom: -.25em
+}
+
+.MDD_autoncontent.MDDfooter audio, .MDD_autoncontent.MDDfooter img, .MDD_autoncontent.MDDfooter video {
+  border: 0;
+  max-width: 100%
+}
+
+.MDD_autoncontent.MDDfooter small {
+  display: inline-block;
+  font-size: .8em;
+  line-height: 1.4em;
+  text-decoration: inherit
+}
+
+.MDD_autoncontent.MDDfooter p {
+  margin: 15px 0
+}
+
+@media only screen and (max-width: 1420px) {
+  .MDD_autoncontent.MDDfooter p {
+    margin: 10px 0
+  }
+}
+
+.MDD_autoncontent.MDDfooter .vfc-layout {
+  display: block;
+  height: 100%;
+  letter-spacing: -.325rem;
+  list-style: none;
+  margin: 0;
+  padding-left: 0
+}
+
+.MDD_autoncontent.MDDfooter .vfc-layout--gutter {
+  margin: 0 -10px
+}
+
+.content > .vfc-layout > .MDD_autoncontent.MDDfooter .vfc-layout__item {
+  margin-bottom: 48px
+}
+
+@media only screen and (max-width: 970px) {
+  .content > .vfc-layout > .MDD_autoncontent.MDDfooter .vfc-layout__item {
+    margin-bottom: 24px
+  }
+  .content > .vfc-layout > .MDD_autoncontent.MDDfooter .vfc-layout__item:last-child {
+    margin-bottom: 0 !important
+  }
+}
+
+.content > .vfc-layout > .MDD_autoncontent.MDDfooter .vfc-layout__item:last-child {
+  margin-bottom: 0 !important
+}
+
+.MDD_autoncontent.MDDfooter .vfc-layout__item--gutter {
+  padding: 0 10px
+}
+
+.MDD_autoncontent.MDDfooter .vfc-layout__item--right {
+  float: right
+}
+
+.MDD_autoncontent.MDDfooter .vfc-layout__item--left {
+  float: left
+}
+
+.MDD_autoncontent.MDDfooter .vfc-layout__item--middle {
+  vertical-align: middle
+}
+
+.MDD_autoncontent.MDDfooter .vfc-layout__item--bottom {
+  vertical-align: bottom
+}
+
+.MDD_autoncontent.MDDfooter .vfc-layout--rev {
+  direction: rtl;
+  text-align: right
+}
+
+.MDD_autoncontent.MDDfooter .vfc-layout--rev > .vfc-layout__item {
+  direction: ltr;
+  text-align: left
+}
+
+.MDD_autoncontent.MDDfooter .vfc-layout--right {
+  text-align: right
+}
+
+.MDD_autoncontent.MDDfooter .vfc-layout--right > .vfc-layout__item {
+  text-align: left
+}
+
+.MDD_autoncontent.MDDfooter .vfc-layout--middle > .vfc-layout__item {
+  vertical-align: middle
+}
+
+.MDD_autoncontent.MDDfooter .vfc-layout--bottom > .vfc-layout__item {
+  vertical-align: bottom
+}
+
+.MDD_autoncontent.MDDfooter .vfc-layout--center {
+  text-align: center
+}
+
+.MDD_autoncontent.MDDfooter .vfc-layout--center > .vfc-layout__item {
+  text-align: left
+}
+
+.MDD_autoncontent.MDDfooter .vfc-layout--auto > .vfc-layout__item {
+  width: auto
+}
+
+@media only screen and (max-width: 970px) {
+  .MDD_autoncontent.MDDfooter .vfc-layout--gutter {
+    margin: 0 -3px
+  }
+  .MDD_autoncontent.MDDfooter .vfc-layout__item--gutter {
+    padding: 0 3px
+  }
+}
+
+.MDD_autoncontent.MDDfooter .accordion {
+  margin-top: 40px;
+  list-style: none;
+  padding: 0
+}
+
+.MDD_autoncontent.MDDfooter .accordion--black-arrow .chevron__container::after {
+  border-color: #333
+}
+
+.MDD_autoncontent.MDDfooter .accordion__item {
+  box-shadow: 0 0 3px 0 #afafaf;
+  margin-bottom: 10px;
+  padding: 9px 35px;
+  background: #FFF
+}
+
+.MDD_autoncontent.MDDfooter .accordion__heading {
+  background-color: #FFF;
+  z-index: 2;
+  position: relative;
+  overflow: hidden;
+  font-size: 20px;
+  margin: -9px -35px;
+  padding: 9px 35px
+}
+
+.MDD_autoncontent.MDDfooter .accordion__arrow-down::after, .MDD_autoncontent.MDDfooter .accordion__arrow-up::after {
+  border-right: 2px solid #e60000;
+  border-top: 2px solid #e60000;
+  content: "";
+  height: 13px;
+  width: 13px;
+  position: absolute;
+  display: inline-block;
+  right: 40px;
+  transition: all .5s
+}
+
+.MDD_autoncontent.MDDfooter .accordion__heading:hover {
+  cursor: pointer
+}
+
+.MDD_autoncontent.MDDfooter .accordion__arrow-down::after {
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  margin-top: -5px;
+  -webkit-transform: translateY(-32%) rotate(135deg);
+  -ms-transform: translateY(-32%) rotate(135deg);
+  transform: translateY(-32%) rotate(135deg);
+  top: 50%
+}
+
+.MDD_autoncontent.MDDfooter .accordion__arrow-up::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  margin-top: 10px;
+  top: 25%
+}
+
+.MDD_autoncontent.MDDfooter .accordion__content {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin-bottom: 30px
+}
+
+.MDD_autoncontent.MDDfooter .accordion__content--collapse {
+  display: none
+}
+
+.MDD_autoncontent.MDDfooter .accordion .chevron__text {
+  padding-right: 30px
+}
+
+@media only screen and (max-width: 970px) {
+  .MDD_autoncontent.MDDfooter .accordion__item {
+    padding: 25px 40px
+  }
+  .MDD_autoncontent.MDDfooter .accordion__heading {
+    margin: -25px -35px;
+    font-size: 18px;
+    height: 60px
+  }
+}
+
+.MDD_autoncontent.MDDfooter .btn {
+  padding: 7px 17px;
+  background-color: #e60000;
+  box-shadow: none;
+  font-size: 16px;
+  font-family: 'VodafoneRegular';
+  border: 0
+}
+
+@media all and (max-width: 970px) {
+  .MDD_autoncontent.MDDfooter .btn {
+    padding: 12px 10px
+  }
+}
+
+.MDD_autoncontent.MDDfooter .btn:focus, .MDD_autoncontent.MDDfooter .btn:hover {
+  top: auto;
+  box-shadow: none;
+  background-color: #970000;
+  border: 0;
+  text-decoration: none
+}
+
+.MDD_autoncontent.MDDfooter .chevron {
+  display: table;
+  width: 100%
+}
+
+.MDD_autoncontent.MDDfooter .chevron__container, .MDD_autoncontent.MDDfooter .chevron__text {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%
+}
+
+.MDD_autoncontent.MDDfooter .chevron__container {
+  text-align: right;
+  width: 20px
+}
+
+.MDD_autoncontent.MDDfooter .chevron__icon--right {
+  float: right
+}
+
+.MDD_autoncontent.MDDfooter .accordion .chevron {
+  width: auto
+}
+
+.MDD_autoncontent.MDDfooter .vfc-layout__wrapper {
+  outline: 0;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.MDD_autoncontent.MDDfooter .vfc-layout__item {
+  display: inline-block;
+  padding-left: 0;
+  vertical-align: top;
+  width: 100%;
+  letter-spacing: normal
+}
+
+.MDD_autoncontent.MDDfooter .vfc-u-1\/1 {
+  width: 100% !important
+}
+
+.MDD_autoncontent.MDDfooter .vfc-u-1\/2 {
+  width: 50% !important
+}
+
+.MDD_autoncontent.MDDfooter .vfc-u-1\/3 {
+  width: 33.3333333333% !important
+}
+
+.MDD_autoncontent.MDDfooter .vfc-u-2\/3 {
+  width: 66.6666666667% !important
+}
+
+.MDD_autoncontent.MDDfooter .vfc-u-1\/4 {
+  width: 25% !important
+}
+
+.MDD_autoncontent.MDDfooter .vfc-u-3\/4 {
+  width: 75% !important
+}
+
+.MDD_autoncontent.MDDfooter .vfc-u-1\/5 {
+  width: 20% !important
+}
+
+.MDD_autoncontent.MDDfooter .vfc-u-2\/5 {
+  width: 40% !important
+}
+
+.MDD_autoncontent.MDDfooter .vfc-u-3\/5 {
+  width: 60% !important
+}
+
+.MDD_autoncontent.MDDfooter .vfc-u-4\/5 {
+  width: 80% !important
+}
+
+@media screen and (min-width: 970px) {
+  .MDD_autoncontent.MDDfooter .vfc-u-1\/1-lap-and-up {
+    width: 100% !important
+  }
+  .MDD_autoncontent.MDDfooter .vfc-u-1\/2-lap-and-up {
+    width: 50% !important
+  }
+  .MDD_autoncontent.MDDfooter .vfc-u-1\/3-lap-and-up {
+    width: 33.3333333333% !important
+  }
+  .MDD_autoncontent.MDDfooter .vfc-u-2\/3-lap-and-up {
+    width: 66.6666666667% !important
+  }
+  .MDD_autoncontent.MDDfooter .vfc-u-1\/4-lap-and-up {
+    width: 25% !important
+  }
+  .MDD_autoncontent.MDDfooter .vfc-u-3\/4-lap-and-up {
+    width: 75% !important
+  }
+  .MDD_autoncontent.MDDfooter .vfc-u-1\/5-lap-and-up {
+    width: 20% !important
+  }
+  .MDD_autoncontent.MDDfooter .vfc-u-2\/5-lap-and-up {
+    width: 40% !important
+  }
+  .MDD_autoncontent.MDDfooter .vfc-u-3\/5-lap-and-up {
+    width: 60% !important
+  }
+  .MDD_autoncontent.MDDfooter .vfc-u-4\/5-lap-and-up {
+    width: 80% !important
+  }
+}
+
+.MDD_autoncontent.MDDfooter .align--left {
+  text-align: left !important
+}
+
+.MDD_autoncontent.MDDfooter .align--center {
+  text-align: center !important
+}
+
+.MDD_autoncontent.MDDfooter .align--right {
+  text-align: right !important
+}
+
+.MDD_autoncontent.MDDfooter .vfc-u-bold {
+  font-family: 'VodafoneRegularBold'
+}
+
+.MDD_autoncontent.MDDfooter .vfc-u-center {
+  text-align: center
+}
+
+.MDD_autoncontent.MDDfooter .vfc-u-color-bg-black {
+  background-color: #333
+}
+
+.MDD_autoncontent.MDDfooter .vfc-u-color-bg-black--overlay {
+  background-color: hex-to-rgba(#333, .8) !important
+}
+
+.MDD_autoncontent.MDDfooter footer .footer {
+  font-family: 'VodafoneLight';
+  font-size: 18px;
+  text-align: left
+}
+
+.MDD_autoncontent.MDDfooter footer .footer :focus {
+  outline: #fff solid 1px;
+  color: #fff
+}
+
+.MDD_autoncontent.MDDfooter footer .footer a {
+  color: #fff !important
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .ventajasFooter ul > li, .MDD_autoncontent.MDDfooter footer .footer h3.fo-social-forum {
+  color: #fff
+}
+
+.MDD_autoncontent.MDDfooter footer .footer h3 {
+  font-size: 20px
+}
+
+@media only screen and (max-width: 970px) {
+  .MDD_autoncontent.MDDfooter footer .footer h3 {
+    font-size: 20px;
+    font-family: 'VodafoneLight'
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .ventajasFooter {
+    text-align: center
+  }
+}
+
+.MDD_autoncontent.MDDfooter footer .footer a.btn {
+  font-family: 'VodafoneRegular';
+  font-size: 18px;
+  padding: 12px 17px;
+  border: 0;
+  color: #fff
+}
+
+.MDD_autoncontent.MDDfooter footer .footer fieldset {
+  border: 1px solid;
+  margin: 20px 10px;
+  padding: 10px;
+  font-size: 0
+}
+
+.MDD_autoncontent.MDDfooter footer .footer fieldset > legend {
+  padding: 0 10px;
+  font-size: 16px
+}
+
+.MDD_autoncontent.MDDfooter footer .footer fieldset > ul > li {
+  margin: 0 !important;
+  float: left;
+  padding: 10px;
+  font-size: 16px;
+  width: 50%
+}
+
+.MDD_autoncontent.MDDfooter footer .footer fieldset > ul > li .icon {
+  float: left
+}
+
+.MDD_autoncontent.MDDfooter footer .footer fieldset > ul > li span {
+  margin-left: 24px;
+  padding-left: 10px;
+  display: block
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .ventajasFooter {
+  border: 1px solid;
+  margin: 64px 10px 3px;
+  padding: 10px;
+  font-size: 0;
+  position: relative;
+  border-radius: 10px
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .ventajasFooter > ul {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-pack: distribute;
+  justify-content: space-around
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .ventajasFooter > ul > li {
+  margin: 0 !important;
+  float: left;
+  padding: 10px;
+  width: auto;
+  font-size: 18px;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .ventajasFooter > ul > li .icon {
+  float: left;
+  width: auto;
+  height: auto
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .ventajasFooter > ul > li span {
+  margin-left: 10px;
+  padding-left: 0;
+  display: block;
+  -ms-flex-item-align: center;
+  align-self: center
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .ventajasFooter > span.h3 {
+  font-size: 18px;
+  background-color: #333;
+  position: absolute;
+  margin-top: -19px;
+  margin-left: 10px;
+  padding: 0 10px;
+  color: #fff !important
+}
+
+@media only screen and (max-width: 970px) {
+  .MDD_autoncontent.MDDfooter footer .footer .ventajasFooter > span.h3 {
+    position: relative;
+    top: -19px;
+    margin: 0
+  }
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .accordion {
+  margin-bottom: 10px;
+  padding: 0 10px
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .accordion__item {
+  background: inherit;
+  box-shadow: none
+}
+
+@media only screen and (max-width: 970px) {
+  .MDD_autoncontent.MDDfooter footer .footer .accordion__item .chevron.accordion__heading {
+    display: block;
+    line-height: 45px;
+    font-family: 'VodafoneLight';
+    font-size: 18px;
+    margin-bottom: auto
+  }
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .accordion__heading {
+  background: inherit
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .accordion__heading .chevron__container::after {
+  border-color: #fff
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .accordion__content > ul {
+  font-size: 16px
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .accordion__content > ul > li {
+  margin: .5em 0 !important
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .accordion__content > ul > li > a {
+  font-family: 'VodafoneLight';
+  font-size: 18px
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .ext-links p, .MDD_autoncontent.MDDfooter footer .footer .legal ul > li a, .MDD_autoncontent.MDDfooter footer .footer .legal ul > li a h3 {
+  font-size: 16px;
+  font-family: 'VodafoneRegular'
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .accordion__content a {
+  color: #fff
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .fo-social {
+  margin-top: 0 !important
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .fo-social > li {
+  float: none !important;
+  display: inline-block
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .fo-social > li a img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: auto
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .fo-social-forum > .communityIcon {
+  width: 40px;
+  height: 40px
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .legal ul {
+  list-style: none;
+  padding: 10px;
+  text-align: center
+}
+
+@media only screen and (max-width: 970px) {
+  .MDD_autoncontent.MDDfooter footer .footer .legal ul {
+    padding: 10px 26px
+  }
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .legal ul > li {
+  display: inline-block;
+  margin: 0 10px 5px 0 !important
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .legal ul > li:after {
+  content: "|";
+  margin: 0 10px
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .legal ul > li:last-child:after {
+  content: none
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .legal .copyright {
+  padding: 10px 0;
+  color: #fff
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .black.vfc-u-color-bg-black {
+  background-color: #000 !important
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .ext-links {
+  padding-top: 10px
+}
+
+.MDD_autoncontent.MDDfooter footer .footer .ext-links a {
+  margin: 0 10px 24px;
+  width: 80px
+}
+
+@media only screen and (min-width: 970px) {
+  .MDD_autoncontent.MDDfooter footer .footer .legal ul, .MDD_autoncontent.MDDfooter footer .footer .ventajasFooter > ul > li span {
+    text-align: left
+  }
+  .MDD_autoncontent.MDDfooter footer .footer-mobile {
+    display: none
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .ventajasFooter > ul > li {
+    width: auto
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .ventajasFooter .vfc-layout__item:last-child {
+    padding: 0 30px
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .ventajasFooter .btn {
+    margin: 0
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .social-wrapper {
+    margin-bottom: 20px
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .fo-social {
+    padding-left: 0
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .black > .vfc-layout__wrapper {
+    font-size: 0
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .black > .vfc-layout__wrapper > .vfc-layout__item {
+    font-size: .8rem
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .accordion {
+    font-size: 0
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .accordion .chevron__text {
+    line-height: 25px;
+    color: #fff;
+    height: 55px;
+    display: table-cell;
+    vertical-align: bottom;
+    font-family: 'VodafoneRegular';
+    font-size: 18px;
+    font-weight: bolder
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .accordion .chevron__text--block {
+    display: block
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .accordion__arrow-down {
+    display: inline-block
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .accordion__arrow-down::after {
+    border-right: 1px solid "#E60000";
+    border-top: 1px solid "#E60000";
+    content: "";
+    display: block;
+    height: 9px;
+    width: 9px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    position: inherit
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .accordion__item {
+    padding: 10px 40px 10px 0
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .accordion__content > ul > li > a {
+    font-family: 'VodafoneLight';
+    font-size: 18px
+  }
+}
+
+@media only screen and (min-width: 970px) and (max-width: 970px) {
+  .MDD_autoncontent.MDDfooter footer .footer .accordion__item {
+    padding: 25px 10px
+  }
+}
+
+@media all and (max-width: 969px) {
+  .MDD_autoncontent.MDDfooter footer .footer-desktop {
+    display: none
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .fo-social li {
+    margin: 34px 4px 3px
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .legal ul {
+    margin: 25px 0 3px
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .ext-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 48px 0 0
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .ext-links a {
+    margin: 0 20px 48px;
+    width: 96px
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .accordion {
+    font-size: 0
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .accordion .chevron__text {
+    line-height: 25px;
+    font-weight: 400;
+    color: #fff;
+    height: 55px;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'VodafoneRegular';
+    font-size: 18px;
+    padding: 0
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .accordion .chevron__text--block {
+    display: block
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .ventajasFooter > ul > li {
+    width: 50%;
+    text-align: left
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .ventajasFooter > ul > li:last-child {
+    width: 100%
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .ventajasFooter > ul {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .accordion__item {
+    border-top: 1px solid #afafaf;
+    padding: 8px 10px 4px
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .accordion__item > a {
+    border: none !important
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .accordion__item:last-child {
+    border-bottom: 1px solid #afafaf
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .accordion__item .accordion__heading.active .chevron__text {
+    font-weight: bolder
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .accordion__item .accordion__heading .accordion__arrow-down::after {
+    top: 70%;
+    margin-top: -12px
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .accordion__item .accordion__heading .accordion__arrow-up::after {
+    margin-top: 20px;
+    top: 14px
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .accordion__item:first-child {
+    border-top: 0
+  }
+  .MDD_autoncontent.MDDfooter footer .footer .accordion__content ul {
+    margin-left: 8px
+  }
+}
+
+.MDD_autoncontent.MDDfooter footer .footer.footer-desktop, .MDD_autoncontent.MDDfooter footer .vfc-layout {
+  height: auto !important
+}
+
+.MDD_autoncontent.MDDfooter footer .footer.footer-desktop .accordion__content--collapse {
+  display: block
+}
+
+.MDD_autoncontent.MDDfooter footer .social-wrapper .icon_mdd {
+  width: 42px !important;
+  height: 42px !important;
+  fill: currentColor !important;
+  vertical-align: middle
+}
+
+.MDD_autoncontent.MDDfooter footer .social-wrapper span {
+  vertical-align: sub
+}
+
+.MDD_autoncontent.MDDfooter footer .social-wrapper .aa-footer-second-level .icon_mdd {
+  fill: transparent !important;
+  width: 48px !important;
+  height: 48px !important
+}
+
+.MDD_autoncontent.MDDfooter footer .ventajasFooter .icon_mdd {
+  width: 42px !important;
+  height: 42px !important
+}
+
+.MDD_autoncontent.MDDfooter footer .ext-links .icon_mdd {
+  height: 40px !important;
+  width: 80px !important
+}
+
+.MDD_autoncontent.MDDfooter footer .fo-social ul li {
+  padding: 0 .7em;
+  vertical-align: middle;
+  height: 42px
+}
+
+.MDD_autoncontent.MDDfooter footer .fo-social ul li:last-child {
+  padding: 0 .7em
+}
+
+.MDD_autoncontent.MDDfooter footer .fo-social .icon_mdd {
+  width: 42px;
+  height: 42px;
+  fill: #fff
+}
+
+@media only screen and (max-width: 640px) {
+  .MDD_autoncontent.MDDfooter footer .fo-social .fo-social li {
+    margin: 0 4px 3px
+  }
+  .MDD_autoncontent.MDDfooter footer .fo-social .icon_mdd {
+    width: 35px;
+    height: 35px
+  }
+}
+
+@media(max-width: 640px) {
+  .MDD_autoncontent.MDDfooter footer .aa-footer-second-level .icon_mdd {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px
+  }
+  .MDD_autoncontent.MDDfooter footer .fo-social > li a img {
+    vertical-align: initial
+  }
+}
+
+@media(max-width: 970px) {
+  .MDD_autoncontent.MDDfooter footer .aa-footer-second-level .icon_mdd {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px
+  }
+  .MDD_autoncontent.MDDfooter footer .fo-social > li a img {
+    vertical-align: initial
+  }
+}

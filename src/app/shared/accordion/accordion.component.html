@@ -1,0 +1,31 @@
+<div class="acc"
+     [ngClass]="{'acc--open' : accordionState }">
+  <button class="acc__btn"
+          (click)="isOpenAccordion(accordionState)"
+  > {{nameBtn}}
+  </button>
+
+  <ng-content *ngIf="multiple; then multipleSelection else simpleSelection"></ng-content>
+
+</div>
+
+<ng-template #simpleSelection>
+  <ul class="acc__content" (click)="selectedElement($event)">
+    <li class="acc__item" *ngFor="let element of elements"> {{element}} </li>
+  </ul>
+</ng-template>
+
+<ng-template #multipleSelection>
+  <form action="" (ngSubmit)="onSubmit(formfilter)" #formfilter="ngForm">
+    <ul class="acc__content">
+      <li class="acc__item" *ngFor="let element of elements; index as i">
+      <input class="acc__checkbox" [(ngModel)]="elementBrands[element]" [id]="i" type="checkbox" [value]="false"
+             [name]="element">
+      <label class="acc__label" [for]="i">{{element}}</label>
+    </li>
+      <li class="acc__item acc__item--apply">
+        <button type="submit" class="acc__apply">Aplicar Filtros</button>
+      </li>
+    </ul>
+  </form>
+</ng-template>

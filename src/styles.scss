@@ -1,1 +1,99 @@
 /* You can add global styles to this file, and also import other style files */
+
+/**** Reset ****/
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: VodafoneRegular, 'sans-serif';
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+figure,
+button{
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: normal;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  border: none;
+  background: none;
+}
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+[type="radio"],
+[type="checkbox"]{
+  + label{
+    cursor: pointer;
+  }
+}
+/****** REGISTER FONTS ******/
+@font-face {
+  font-family: "VodafoneLight";
+  src: url("assets/fonts/vodafone-light-regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400
+}
+@font-face {
+  font-family: "VodafoneRegular";
+  src: url("assets/fonts/vodafone-regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400
+}
+@font-face {
+  font-family: "VodafoneRegularBold";
+  src: url("assets/fonts/vodafone-regular-bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 400
+}
+/****************************/
+
+/*************/
+
+main {
+  max-width: 1280px;
+  margin: auto;
+}
+
+/***** GENERICS CLASS ******/
+.hideAccessible {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  overflow: hidden !important;
+}

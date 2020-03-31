@@ -1,0 +1,31 @@
+<section class="cm">
+  <h1 class="cm__title"> {{ title }} </h1>
+  <ul class="cm__list">
+    <li class="cm__item"><strong>Nuevo clientes</strong></li>
+    <li class="cm__item">Nuevo cliente móvil + fibra</li>
+    <li class="cm__item">Ya soy cliente</li>
+  </ul>
+  <section class="cm__filters">
+    <h2 class="hideAccessible">Filtros del catálogo</h2>
+    <div>
+      {{ orderTxt }}
+      <app-accordion [multiple]="false"
+                     [elements]="filterTypes"
+                     [nameBtn]="'defecto'"
+                     (selection)="filterOrderBySelected($event)"></app-accordion>
+    </div>
+    <div>
+      {{ filterTxt }}
+      <app-accordion [multiple]="true"
+                     [elements]="filterBrands"
+                     [nameBtn]="'Filtrar'"
+                     (selection)="filterBrandsSelected($event)"></app-accordion>
+    </div>
+  </section>
+  <section>
+    <h2 class="hideAccessible">Listado de teléfonos móviles disponibles en Vodafone</h2>
+    <div *ngIf="this.catalogTerminals" class="cm__grid">
+      <app-card-mobile *ngFor="let mobile of orderBy(filterType, filterBrand)" [mobile]="mobile"></app-card-mobile>
+    </div>
+  </section>
+</section>

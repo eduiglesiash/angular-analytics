@@ -1,0 +1,17 @@
+<a href="#nolink">
+  <article class="card">
+    <figure class="card__picture">
+      <img [src]="mobile.imgList | siteVodafone" [alt]="mobile.textImgList">
+    </figure>
+    <div class="card__content">
+      <h3 class="card__title">{{ mobile.name }}</h3>
+      <div class="card__info-price">
+        <p>{{ cashText }}</p>
+        <p class="card__bold"> {{mobile.monthlyFeeOrder}}€/mes</p>
+        <p class="card__paid">x {{mobile.paymentPostponedMonth}} meses <br> + {{mobile.initialPaymentWithVat}}€ pago inicial
+        </p>
+        <p>Precio: <small class="card__bold">{{mobile.cashPaymentWithVat}} €</small></p>
+      </div>
+    </div>
+  </article>
+</a>

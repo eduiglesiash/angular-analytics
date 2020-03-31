@@ -1,0 +1,30 @@
+export interface MobileInterface {
+  name: string;
+  id: number;
+  idTerminal: number;
+  idTypeTerminal: number;
+  idGroup: number;
+  sap: string;
+  color: string;
+  codeColor: string;
+  capacity: string;
+  imgList: string;
+  textImgList: string;
+  iconList?: Array<string>;
+  model: string;
+  brand: string;
+  idBrand: number;
+  idPrice: number;
+  cashPaymentWithVat: number;
+  cashPaymentWithoutVat: number;
+  initialPaymentWithVat: number;
+  initialPaymentWithoutVat: number;
+  canonWithVat: number;
+  canonWithoutVat: number;
+  paymentPostponedMonth: number;
+  catalogueOffer: string;
+  nameRate: string;
+  promotionsList: Array<number>;
+  orderInitialPaid: number;
+  monthlyFeeOrder: number;
+}
