@@ -1,1 +1,17 @@
-<p>mobile-detail works!</p>
+
+<div *ngIf="mobile">
+  <a [routerLink]="['/catalog']">< volver</a><span>/{{ mobile.textImgList | nameUrl }}</span>
+  <br>
+  <h2>{{mobile.name}}</h2>
+  <div class="card__info-price">
+    <p>Movil a plazos</p>
+    <p class="card__bold"> {{mobile.monthlyFeeOrder}}€/mes</p>
+    <p class="card__paid">x {{mobile.paymentPostponedMonth}} meses <br> + {{mobile.initialPaymentWithVat}}€ pago inicial
+    </p>
+    <p>Precio: <small class="card__bold">{{mobile.cashPaymentWithVat}} €</small></p>
+  </div>
+
+  {{mobile | json}}
+</div>
+
+

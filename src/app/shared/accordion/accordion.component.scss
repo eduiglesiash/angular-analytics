@@ -81,9 +81,10 @@
   &__checkbox {
     position: absolute;
     opacity: 0;
-    &:focus + .acc__label{
-      border: 2px solid #e60000;
-    }
+
+    //&:focus + .acc__label {
+    //  border: 2px solid #e60000;
+    //}
     &:checked + .acc__label:before {
       content: '';
       display: inline-block;

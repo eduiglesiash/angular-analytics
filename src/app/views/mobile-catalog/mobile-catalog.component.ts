@@ -74,7 +74,12 @@ export class MobileCatalogComponent implements OnInit, OnDestroy {
     const terminals = [];
     // Filter terminals
     if (brands.length > 0) {
-      brands.map(brand => terminals.push(this.catalogTerminals.filter((terminal: MobileInterface) => terminal.brand.toLowerCase().trim() === brand.toLowerCase().trim())));
+      brands.map(brand =>
+        terminals.push(
+          this.catalogTerminals
+            .filter((terminal: MobileInterface) => terminal.brand.toLowerCase().trim() === brand.toLowerCase().trim())
+        )
+      );
       // @ts-ignore
       catalogTerminals = terminals.flat();
     }
