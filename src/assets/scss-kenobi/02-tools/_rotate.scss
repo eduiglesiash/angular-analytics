@@ -1,0 +1,14 @@
+.ftol-rotate {
+
+  @for $i from 1 through 8 {
+    &--#{45 * $i} {
+      @include prefix((transform: rotate(#{45 * $i}deg)));
+    }
+  }
+
+  @for $i from 1 through 8 {
+    &---#{45 * $i} {
+      @include prefix((transform: rotate(-#{45 * $i}deg)));
+    }
+  }
+}

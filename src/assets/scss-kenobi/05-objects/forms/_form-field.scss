@@ -1,0 +1,357 @@
+//ocultar las flechas en los input type number
+input[type='number'] {
+  -moz-appearance: textfield;
+  /*For FireFox*/
+
+  &::-webkit-inner-spin-button {
+    /*For Webkits like Chrome and Safari*/
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.mat-form-field {
+  width: 100%;
+
+  &.mat-focused {
+    .mat-form-field-label {
+      color: map-get($colors, black-pure);
+      width: auto !important;
+    }
+  }
+
+  &.mat-form-field-invalid {
+    .mat-form-field-label {
+      color: map-get($colors, light-red) !important;
+    }
+  }
+
+  .mat-icon {
+    cursor: pointer;
+    position: relative;
+    bottom: rem(10px);
+    right: 0.75rem;
+  }
+
+  .mat-ripple {
+    display: none;
+  }
+}
+
+.mat-form-field-wrapper {
+  margin: 0 !important;
+  padding-bottom: 1.3rem !important;
+
+  .delivery__content & {
+    padding-bottom: 0 !important;
+  }
+
+  .wrapper-address {
+    padding-bottom: rem(20px);
+
+  }
+
+  .mat-checkbox-layout {
+    .wrapper-address {
+      margin-left: rem(5px);
+    }
+
+    .mat-checkbox-inner-container {
+      .monthlyPayment {
+        margin-right: rem(16px);
+      }
+    }
+  }
+
+  .mat-checkbox-frame {
+    border-width: rem(1px);
+    border-radius: rem(4px);
+
+    .wrapper-address,
+    .monthlyPayment {
+      border-width: rem(1px);
+      border-radius: rem(4px);
+      background-color: map-get($colors, white-pure);
+      border-color: map-get($colors, dark-gray);
+
+    }
+  }
+
+  @include mq-tablet {
+    padding-bottom: 1.34375rem !important;
+
+    .lines__fields {
+      padding-bottom: .7rem !important;
+    }
+  }
+
+  @include mq-desktop {
+    width: 100% !important;
+    padding-bottom: 1.34375rem !important;
+
+    .lines__fields {
+      padding-bottom: .7rem !important;
+    }
+
+    .monthlyPayment {
+      width: rem(358px) !important;
+    }
+
+    .monthlyPayment__content__aceptos__modal {
+      width: 100% !important;
+    }
+
+    .monthlyPayment__content {
+      width: 100% !important;
+    }
+  }
+
+  .mat-form-field-flex {
+    .monthlyPayment {
+      @include mq-desktop {
+        padding: 0 rem(12px) 0 rem(20px);
+      }
+    }
+
+    .monthlyPayment__content__aceptos__modal {
+      @include mq-desktop {
+        padding: 0;
+      }
+    }
+
+    .monthlyPayment__content {
+      @include mq-desktop {
+        padding: 0;
+      }
+    }
+
+    .monthlyPayment__content__iban {
+      padding: 0 0.75rem 0 1.25rem;
+    }
+
+  }
+}
+
+.mat-form-field-infix {
+  padding: rem(5px) 0 !important;
+  min-width: 100% !important;
+  width: 100% !important;
+
+  .text-input-element {
+    color: #333333;
+    bottom: .4rem;
+  }
+}
+
+.mat-form-field-flex {
+  padding-right: 0 !important;
+}
+
+.mat-form-field-label-wrapper {
+  width: 95% !important;
+  overflow: visible !important;
+  top: -1.2rem !important
+}
+
+.mat-form-field-label {
+  &.mat-empty {
+    color: #00000099;
+  }
+
+  color: map-get($colors, black-pure);
+  top: 1.37345rem !important;
+  font-family: 'VodafoneRegular' !important;
+  font-size: 1rem !important;
+}
+
+// overwrite of angular material
+ftol-root {
+
+  .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label,
+  .mat-form-field-empty.mat-form-field-label {
+    display: flex;
+  }
+}
+
+.mat-form-field-should-float {
+  .mat-form-field-label {
+    @include align-items(center);
+    @include flexbox();
+    height: rem(24px);
+    padding: 0 0.2rem;
+    transform: translateY(-1.29375em) scale(.7) !important;
+    width: auto !important;
+  }
+}
+
+.personal-data {
+  .mat-form-field-should-float {
+    .mat-form-field-label {
+      transform: translateY(-1.29375em) scale(.7) !important;
+      height: calc(100% - 25px);
+      width: auto !important;
+      padding: 0 0.5rem;
+      border-top-left-radius: rem(10px);
+      border-top-right-radius: rem(10px);
+    }
+  }
+}
+
+.mat-form-field-subscript-wrapper {
+  padding: 0 !important;
+  position: static !important;
+  margin-top: 0;
+  color: map-get($colors, black-pure);
+  text-align: right;
+
+  mat-error {
+    margin-top: .3125rem;
+    color: map-get($colors, light-red);
+    font-family: 'VodafoneRegular';
+    font-size: 1rem;
+    line-height: 1.25rem;
+
+    @media only screen and (max-width: $breakpoint-mov) {
+      text-align: right;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  mat-hint {
+    margin-top: .3125rem;
+    font-family: 'VodafoneRegular';
+    font-size: rem(14px);
+    color: #000;
+    border: 1px solid #eb9700;
+    border-radius: 4.9px;
+    @include flexbox();
+    @include flex-direction(row);
+
+    div {
+      background-color: #eb9700;
+      min-width: rem(36px);
+      text-align: center;
+
+      .mat-icon {
+        font-size: rem(24px);
+        position: static;
+        cursor: default;
+        margin-top: rem(5px);
+        color: white
+      }
+    }
+
+    p {
+      margin: 0;
+      padding: rem(16px);
+      text-align: left;
+    }
+  }
+
+  .mat-form-field-hint-spacer {
+    flex: 0;
+  }
+}
+
+
+.mat-form-field-appearance-outline {
+
+  .mat-form-field-flex {
+    @include mq-desktop {
+      padding: .1rem 1rem .1rem 1rem;
+    }
+  }
+
+  &.mat-form-field-invalid {
+    &.mat-form-field-invalid {
+      .mat-form-field-outline-thick {
+        color: map-get($colors, light-red) !important;
+      }
+    }
+  }
+
+  .mat-form-field-outline {
+    background: map-get($colors, white-pure);
+    color: map-get($colors, dark-gray) !important;
+    border-radius: rem(5px);
+    top: -.17rem !important;
+  }
+  &.mat-focused {
+    .mat-form-field-outline-thick, 
+    .mat-form-field-outline,
+    .mat-form-field-label, 
+    .mat-form-field-required-marker {
+      color: map-get($colors, dark-cyan) !important;
+    }
+    
+  }
+
+  .mat-form-field-outline-start {
+    border-width: rem(1px) !important;
+  }
+
+  .mat-form-field-outline-gap {
+    border-width: rem(1px) !important;
+    border-radius: 0 !important;
+    margin: 0 -1px !important;
+  }
+
+  .mat-form-field-outline-end {
+    border-width: rem(1px) !important;
+  }
+
+
+  &.mat-form-field-disabled {
+    .mat-form-field-outline {
+      background: map-get($colors, light-gray-2);
+
+    }
+
+    .mat-form-field-label {
+      color: map-get($colors, dark-black);
+    }
+  }
+}
+
+.mat-form-field-suffix {
+  .mat-icon {
+    transform: translate(-1rem, rem(5px));
+
+    @include mq-explorer {
+      transform: translateY(rem(12px));
+    }
+  }
+}
+
+.combo-address .wrapper-main .mat-icon {
+  @include mq-explorer {
+    transform: translateY(rem(7px));
+  }
+}
+
+destiny-form-delivery .mat-form-field-should-float .mat-form-field-label {
+  background-color: transparent;
+  color: #000;
+}
+
+
+.error {
+  .mat-form-field-outline {
+    &>div {
+      border-color: #ff0000;
+    }
+  }
+
+  .mat-form-field-wrapper {
+    .mat-form-field-label {
+      color: #ff0000;
+    }
+  }
+
+  .mat-checkbox-frame {
+    border-color: #ff0000;
+  }
+}

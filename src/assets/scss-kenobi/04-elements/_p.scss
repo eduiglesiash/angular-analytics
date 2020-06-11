@@ -1,0 +1,15 @@
+p:last-child {
+  margin: 0 0 rem( 15px);
+
+  .vfes-card-box-new__speed-box-text &,
+  .vfms-banner__tooltip-title--inner &,
+  .cintillo &, .mb0 & {
+    margin: 0;
+  }
+}
+
+p.vfes-paragraph.js-li.add-lines-counter__description__rate p {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0;
+}

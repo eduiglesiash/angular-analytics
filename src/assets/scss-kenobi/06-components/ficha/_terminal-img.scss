@@ -1,0 +1,52 @@
+.terminal-img {
+  &.preticket{
+    img {
+        @include mq-desktop {
+          max-height: 23.5rem;
+          max-width: 10rem;
+        }
+    }
+  }
+  img {
+    cursor: pointer;
+    max-height: rem( 220px);
+
+    @include mq-tablet {
+      max-height: rem( 330px);
+    }
+
+    @include mq-desktop {
+      max-height: 27.5rem;
+    }
+    
+  }
+
+  &-new {
+    button {
+      height: 256px;
+      width: 117px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+
+      @include mq-desktop {
+        height: 440px;
+        width: 200px;
+      }
+      
+      img {
+        max-height: 256px;
+        max-width: 117px;
+        z-index: -1;
+        vertical-align: top;
+        position: absolute;
+        top: 0;
+
+        @include mq-desktop {
+          max-height: 440px;
+          max-width: 200px;
+        }
+      }
+    }
+  }
+}

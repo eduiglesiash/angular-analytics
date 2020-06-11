@@ -1,0 +1,13 @@
+.ftol-color {
+
+  @each $k,
+  $v in $colors {
+    &--#{$k} {
+      color: $v !important;
+    }
+
+    &-bg--#{$k} {
+      background: $v !important;
+    }
+  }
+}

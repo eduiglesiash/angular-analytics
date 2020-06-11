@@ -1,0 +1,63 @@
+//$font-path: "fonts/";
+$font-path: "//www.vodafone.es/c/statics/fonts/";
+
+$font-family-vodafone-light: "VodafoneLight";
+$font-path-vodafone-light: $font-path + "VodafoneLt-Regular";
+
+$font-family-vodafone-regular: "VodafoneRegular";
+$font-path-vodafone-regular: $font-path + "VodafoneRg";
+
+$font-family-vodafone-regular-bold: "VodafoneRgBold";
+$font-path-vodafone-regular-bold: $font-path + "vodafonergbd-webfont";
+
+$font-family-sans-serif: $font-family-vodafone-regular, Helvetica, Arial, sans-serif;
+$font-family-serif: Georgia, "Times New Roman", Times, serif;
+$font-family-monospace: "Fira Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
+
+$font-list-vodafone: ($font-family-vodafone-light, $font-path-vodafone-light),
+                     ($font-family-vodafone-regular, $font-path-vodafone-regular),
+                     ($font-family-vodafone-regular-bold, $font-path-vodafone-regular-bold);
+@font-face {
+    font-family: 'VodafoneRgBold';
+    src: url("//www.vodafone.es/c/statics/fonts/vodafonergbd-webfont.eot");
+    src: url("//www.vodafone.es/c/statics/fonts/vodafonergbd-webfont.eot?#iefix") format("embedded-opentype"), url("//www.vodafone.es/c/statics/fonts/vodafonergbd-webfont.woff") format("woff"), url("//www.vodafone.es/c/statics/fonts/vodafonergbd-webfont.ttf") format("truetype"), url("//www.vodafone.es/c/statics/fonts/vodafonergbd-webfont.svg#VodafoneBold") format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'VodafoneRegular';
+    src: url("//www.vodafone.es/c/statics/fonts/VodafoneRg.eot");
+    src: url("//www.vodafone.es/c/statics/fonts/VodafoneRg.eot?#iefix") format("embedded-opentype"), url("//www.vodafone.es/c/statics/fonts/VodafoneRg.woff") format("woff"), url("//www.vodafone.es/c/statics/fonts/VodafoneRg.ttf") format("truetype"), url("//www.vodafone.es/c/statics/fonts/VodafoneRg.svg#VodafoneRgRegular") format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+  font-family: "VodafoneBold";
+  src: url("//www.vodafone.es/c/statics/fonts/VodafoneExBd_W.eot");
+  src: url("//www.vodafone.es/c/statics/fonts/VodafoneExBd_W.eot?#iefix") format('embedded-opentype'), url("//www.vodafone.es/c/statics/fonts/VodafoneExBd_W.woff") format('woff'), url("//www.vodafone.es/c/statics/fonts/VodafoneExBd_W.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'VodafoneLight';
+    src: url('//www.vodafone.es/c/statics/fonts/VodafoneLt-Regular.eot');
+    src: url('//www.vodafone.es/c/statics/fonts/VodafoneLt-Regular.eot?#iefix') format('embedded-opentype'),
+        url('//www.vodafone.es/c/statics/fonts/VodafoneLt-Regular.woff') format('woff'),
+        url('//www.vodafone.es/c/statics/fonts/VodafoneLt-Regular.ttf') format('truetype'),
+        url('//www.vodafone.es/c/statics/fonts/VodafoneLt-Regular.svg#VodafoneLt-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ftol-bold{
+  font-weight: bold !important;
+}
+.vfes-title--regular {
+  font-family: "VodafoneRegular" !important;
+}
+.vfes-title--center {
+  text-align: center !important;
+}

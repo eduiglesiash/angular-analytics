@@ -1,0 +1,49 @@
+ .phone-detail {
+
+   &__rate-detail {
+
+     &-link {
+       justify-content: center;
+       @include flexbox();
+       @include justify-content(center);
+       margin-bottom: rem( 20px);
+       line-height: rem( 21px);
+
+       @include mq-tablet {
+         @include justify-content(flex-start);
+         line-height: rem( 25px);
+       }
+
+       @include mq-desktop() {
+         line-height: rem( 25px);
+       }
+
+       div {
+         padding: 0 rem( 6px);
+
+         &:first-child() {
+           padding-left: 0;
+         }
+
+         h6 {
+           font-size: 1rem;
+           font-family: 'VodafoneRegular';
+           margin-bottom: rem( 5px);
+         }
+       }
+
+       a {
+         text-decoration: underline;
+         -webkit-transform: translateY(1px);
+         transform: translateY(rem( 1px));
+         margin-left: rem( 5px);
+         white-space: nowrap;
+
+         @include mq-tablet {
+           font-size: 1rem;
+         }
+       }
+     }
+   }
+
+ }

@@ -1,0 +1,45 @@
+ftol-cart,.tiket-full {
+  .ticket {
+    &__header.mat-expansion-panel-header {
+      min-height: rem(60px);
+      padding: 0;
+
+    }
+    
+    .mat-expansion-panel-body {
+      padding: 0;
+    }
+  }
+}
+
+
+ftol-cart-subtotal .mat-expansion-panel.mat-expanded{
+  .mat-expansion-panel-content{
+    max-height: 37vh;
+    overflow: auto;
+    @include mq-desktop {
+      max-height: 100%;
+      overflow: hidden;
+    }
+  }
+}
+ftol-cart-subtotal .mat-expansion-panel{
+  .mat-expansion-panel-header {
+    @include mq-tablet {
+      min-height: rem(70px);
+    }
+    @include mq-desktop {
+      min-height: rem(70px);
+    }
+  }
+  .ticket-detail {
+    .mat-expansion-panel-header {
+      @include mq-tablet {
+        min-height: auto;
+      }
+      @include mq-desktop {
+        min-height: auto;
+      }
+    }
+  }
+}

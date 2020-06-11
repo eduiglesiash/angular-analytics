@@ -1,0 +1,71 @@
+
+#app-frame-provider---guideBox---1LDVV.app-frame-provider---change---1ayDL:after{
+  border: none !important;
+  background: transparent !important;
+  font-family: "VodafoneRegular" !important;
+  font-size: 2rem !important;
+  line-height: 1.75rem !important;
+  color: #ffffff !important;
+  margin-left: -2%;
+  margin-top: -25%;
+  text-shadow: 1px 1px #000;
+}
+
+
+@media (orientation: portrait) {
+  .integrator.SELFIE {
+    border-radius: 12em;
+    border-color: #ffffff;
+  }
+  
+  .integrator.SELFIE.FACE_IN_GUIDE {
+    border-radius: 12em;
+    border-color: map-get($colors, light-green);
+  }
+
+}
+
+
+@media (orientation: landscape) {
+  .integrator.SELFIE {
+    border-radius: 12em;
+    border-color: #ffffff;
+
+  }
+  
+  .integrator.SELFIE.FACE_IN_GUIDE {
+    border-radius: 12em;
+    border-color: map-get($colors, light-green);
+   
+  }
+  
+  #canvasTextInformation{
+    transform: rotate(0deg) !important;
+    top:-120px!important;
+    height: 60% !important;
+  }
+
+}
+
+#mitekMedia{
+  z-index:9000!important;
+  top: 50% !important;
+  transform: rotateY(180deg) translateY(-50%) !important;
+}
+#app-frame-provider---guideBox---1LDVV{
+  z-index:9001!important;
+ 
+}
+
+.overflowHidden{
+  overflow:hidden;
+}
+
+#canvasTextInformation{
+  transform: rotate(90deg);
+}
+
+
+.bottom_selfie{
+  text-shadow: 1px 1px #000;
+}

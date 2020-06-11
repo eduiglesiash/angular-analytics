@@ -1,0 +1,173 @@
+@keyframes showMatePanel {
+  from {
+    opacity: 0;
+    height: 0px;
+  }
+
+  to {
+    max-height: rem(180px);
+    opacity: 1;
+  }
+}
+
+.ftol-mat-select__panel {
+  @extend %custom-scroll-bar;
+  min-width: calc(100% + 10px) !important;
+  border-radius: rem(6px) !important;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.25), 0 0 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: map-get($colors, light-gray);
+  margin: 2rem 0 0 0.4rem;
+  animation: showMatePanel 0.3s ease-in-out forwards;
+  .ctaTest & {
+    background-color: map-get($colors, white-pure);
+  }
+
+
+  .mat-option {
+    &.mat-selected {
+      &:not(.mat-option-multiple) {
+        background: transparent;
+      }
+
+      &:not(.mat-option-disabled) {
+        color: map-get($colors, black-pure);
+      }
+    }
+
+    &.mat-active {
+      background: transparent;
+      border-bottom: solid rem( 1px) rgb(235, 235, 235) !important;
+      &:hover {
+        background: rgba(0,0,0,.04);
+        color: rgba(0,0,0,.87);
+      }
+    }
+    .ctaTest & {
+      border-top: rem(1px) solid $color-help;
+      &:first-child {
+        border: none;
+      }
+    }
+  }
+}
+
+.mat-select-arrow {
+  visibility: hidden;
+}
+
+destiny-dropdown {
+  span.mat-select-placeholder {
+    display: none;
+  }
+}
+.rate-select-button {
+  .mat-select {
+    &[aria-owns] {
+      .mat-select-value {
+        .mat-select-placeholder {
+          &::before {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+    @include flexbox();
+    @include justify-content(flex-end);
+    min-height: rem(40px);
+    .mat-select-trigger {
+      width: 97.3%;
+      top: rem(47px);
+      .mat-select-value {
+        height: rem(40px);
+        overflow: visible;
+        span {
+          position: relative;
+          top: rem(-44px);
+          span {
+            position: relative;
+            top: 0;
+          }
+        }
+        &>span{
+          min-height: rem(40px);
+          line-height: rem(40px);
+          color: map-get($colors, dark-black);
+          text-align: center;
+          text-indent: rem(-32px);
+        }
+      }
+    }
+  }
+  span.mat-select-placeholder {
+    height: rem(40px);
+    line-height: rem(40px);
+    display: block;
+    &::before {
+      content: '';
+      position: absolute;
+      top: rem(8px);
+      left: 70%;
+      width: rem(24px);
+      height: rem(24px);
+      background-image: url('/c/tienda/tol/ftol/static/img/icons/chevron-down.svg');
+    }
+  }
+}
+.rate-file-detail {
+  &__select-button {
+    text-align: center;
+    mat-select {
+        &[aria-owns] {
+          .mat-select-value {
+            .mat-select-placeholder {
+              &::before {
+                transform: rotate(0deg);
+              }
+            }
+          }
+        }
+        .mat-select-trigger {
+            display: inline-table;
+            cursor: pointer;
+            position: relative;
+            box-sizing: border-box;
+            width: 186px;
+            overflow: visible;
+            transform: translateY(45px);
+            .mat-select-arrow-wrapper {
+              position: absolute;
+            }
+        }
+        .mat-select-value {
+            overflow: visible;
+            .mat-select-placeholder {
+                background: #E60000;
+                padding: rem(11px) rem(24px);
+                display: inline-block;
+                width: 106%;
+                text-align: left;
+                margin-left: rem(-10px);
+                border-radius: rem(6px);
+                transform: translateY(-45px);
+                color: #ffffff;
+                &::before {
+                  content: '';
+                  position: absolute;
+                  top: rem(8px);
+                  right: 8%;
+                  width: rem(24px);
+                  height: rem(24px);
+                  transform: rotate(180deg);
+                  background-image: url('/c/tienda/tol/ftol/static/img/icons/ic-chevron-down-white.svg');
+                }
+            }
+            
+        }
+    }
+  }
+}
+.mat-select-disabled {
+    .mat-select-value {
+      color: #999;
+  }
+}

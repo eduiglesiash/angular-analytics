@@ -9,6 +9,9 @@ import { SharedModule } from './shared/shared.module';
 import { PipesModule } from './pipes/pipes.module';
 import {HttpClientModule} from '@angular/common/http';
 import { Page404Component } from './views/page404/page404.component';
+import {Mva10DslAngularModule} from '@vodafone-es/reboot-dsl-mva10-angular';
+import {NouisliderModule} from 'ng2-nouislider';
+import { TestComponentsComponent } from './views/test-components/test-components.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +19,15 @@ import { Page404Component } from './views/page404/page404.component';
     MobileDetailComponent,
     MobileCatalogComponent,
     Page404Component,
+    TestComponentsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     SharedModule,
-    PipesModule
+    PipesModule,
+    Mva10DslAngularModule
   ],
   providers: [],
   bootstrap: [AppComponent]

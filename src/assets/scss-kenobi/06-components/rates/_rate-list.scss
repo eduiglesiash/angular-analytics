@@ -1,0 +1,411 @@
+
+.rate-dinamic{
+    padding-bottom: 0;
+}
+.vfes-layout {
+    padding-top: 0;
+    &__item{
+        &__rate{
+            width: 100% !important;
+            max-width: rem(380px);
+            margin: 0 ;
+            padding: 0;
+            @include mq-tablet {
+                width: 48% !important;
+                margin: 0;
+                margin-top:  rem(24px)!important;
+                &:nth-child(odd){
+                    margin-right: rem(16px);
+                }
+            }
+            @include mq-desktop {
+                margin:  rem(24px) rem(10px)!important;
+                &:first-child{
+                    margin-left: 0!important;
+                }
+                &:last-child{
+                    margin-right: 0!important;
+                }
+            }
+        }
+    }
+}
+
+.header {
+    min-height: rem(120px);
+    background-image: url('/c/tienda/tol/static/img/modules/icons/png/background-dark-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -16px 0;
+    padding: rem(20px) 0;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+    @include flex-direction(column);
+    margin-top: rem(15px);
+    @include mq-tablet {
+        background: url('/c/tienda/tol/static/img/modules/icons/png/background-dark.png');
+        padding: rem(32px) 0;
+        min-height: rem(160px);
+        background-size: cover;
+        margin-top: rem(60px);
+
+    }
+    @include mq-desktop {
+        background: url('/c/tienda/tol/static/img/modules/icons/png/background-dark.png');
+        padding: rem(32px) 0;
+        min-height: rem(160px);
+        margin-top:0;
+        background-size: cover;
+
+    }
+
+    &__title {
+        font-family: 'VodafoneLight';
+        font-size: rem(30px);
+        line-height: rem(32px);
+        text-align: center;
+        color: map-get($colors, white-pure);
+        font-weight: normal;
+        margin: 0;
+        padding:  0;
+
+        @include mq-tablet {
+            font-size: rem(40px);
+            line-height: rem(48px);
+        }
+        @include mq-desktop {
+            font-size: rem(44px);
+            line-height: rem(48px);
+            margin: 0;
+        }
+    }
+    &__subtitle {
+        font-family: 'VodafoneRegular';
+        font-size: rem(16px);
+        line-height: rem(24px);
+        text-align: center;
+        color: map-get($colors, white-pure);
+        font-weight: normal;
+        margin-top: rem(8px);
+        max-width: 50%;
+        @include mq-tablet {
+            margin-top: rem(24px);
+            font-size: rem(24px);
+            max-width: 100%;
+        }
+        @include mq-desktop {
+            margin-top: rem(24px);
+            font-size: rem(24px);
+            max-width: 100%;
+        }
+
+    }
+}
+
+.subheader {
+    border-bottom: solid 1px map-get($colors, light-gray-3);
+    div{
+        padding: 0 rem(14px);
+        min-height: rem(51px);
+        @include flexbox();
+        @include align-items(center);
+
+        @include mq-tablet {
+            min-height: rem(53px);
+            padding: 0 rem(20px);
+            margin-bottom: 0;
+        }
+        @include mq-desktop {
+            min-height: rem(63px);
+            margin-bottom: 0;
+        }
+        @media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+            padding: 0 rem(51px);
+        }
+    }
+
+    a {
+        cursor: pointer;
+        @include flexbox();
+        @include align-items(center);
+        padding-left: rem(16px);
+        margin-top: rem(5px);
+        text-decoration: underline;
+        @include mq-tablet {
+            @include align-items(center);
+            margin-bottom: 0;
+        }
+        @include mq-desktop {
+            padding: 0;
+            @include align-items(end);
+            margin-bottom: -.5rem;
+        }
+        .mat-icon {
+            transform: rotate(90deg);
+            width: rem(32px);
+            height: rem(32px);
+            margin-right: -0.4rem;
+            position: absolute;
+            left: 0;
+            @include mq-tablet {
+                width: rem(32px);
+                height: rem(32px);
+            }
+            @include mq-desktop {
+                transform: rotate(-90deg);
+                position: relative;
+                top: -3px;
+                width: rem(32px);
+                height: rem(32px);
+            }
+        }
+
+        p {
+            margin: 0 0 0 rem(5px);
+            font-family: 'VodafoneRegular';
+            font-size: rem(16px);
+            line-height: rem(22px);
+            @include mq-tablet {
+                font-size: rem(18px);
+                line-height: rem(24px);
+            }
+            @include mq-desktop {
+                margin: 0;
+                font-size: rem(18px);
+                line-height: rem(24px);
+            }
+        }
+    }
+    span{
+        display: none;
+        font-family: 'VodafoneRegular';
+        font-size: rem(16px);
+        line-height: rem(22px);
+        @include mq-desktop {
+            display: inline-block;
+            font-size: rem(18px);
+            line-height: rem(24px);
+            margin: 0 0 -.4rem rem(7px);
+        }
+    }
+}
+
+.alterType {
+    @include flexbox();
+    @include justify-content(center);
+    padding: rem(24px);
+    @include mq-tablet{
+        background-color: #ebebeb;
+        padding: rem(26px);
+    }
+    @include mq-desktop{
+        background-color: #ebebeb;
+        padding: rem(26px);
+    }
+    &__link {
+        font-family: 'VodafoneRegular';
+        font-size: rem(16px);
+        text-decoration: underline;
+        letter-spacing: normal;
+
+        &--active {
+            color: map-get($colors, black-pure);
+            font-family: 'VodafoneRgBold';
+            text-decoration: none;
+        }
+    }
+    &__separator{
+        width: rem(1px);
+        height: auto;
+        margin: 0 rem(7px);
+        background-color: map-get($colors, dark-black);
+    }
+}
+.banner60Rate{
+    @include mq-desktop{
+        background-image: url('/c/tienda/tol/static/img/modules/icons/svg/banner60-esim-onenumber-desktop.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &--one{
+        background-image: url('/c/tienda/tol/static/img/card-one-pro-recomendador-desktop.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        img{
+            @include mq-tablet{
+                max-height: 100%;
+            }
+        }
+        .vfes-banner60__content-one-micro{
+            padding: rem(24px) rem(20px) rem(28px) !important;
+
+            @include mq-tablet{
+                margin-left: 10% !important;
+                padding: rem(32px) rem(24px) rem(36px);
+            }
+            @include mq-desktop{
+                width: 35.625rem !important;
+                margin-left: 15% !important;
+            }
+
+            .vfes-banner60__heading{
+                @include mq-tablet{
+                    font-size: rem(30px);
+                }
+                @include mq-desktop{
+                    font-size: rem(40px);
+                }
+            }
+            .vfes-banner60__paragraph{
+                @include mq-tablet{
+                    font-size: rem(20px);
+                }
+                @include mq-desktop{
+                    font-size: rem(20px);
+                }
+            }
+            .vfes-button--primary{
+                color: #ffffff;
+                font-size: rem(16px);
+                line-height: rem(20px);
+                padding: rem(10px) rem(12px);
+            }
+        }
+    }
+    .vfes-banner60__container{
+        max-width: 1280px;
+        margin: auto;
+    }
+    .vfes-button--primary{
+        color: #ffffff;
+    }
+}
+
+.vfes-ms-content {
+    
+    .vfms-coverage {
+
+        height: 100%;
+        letter-spacing: -.325rem;
+        list-style: none;
+        margin: 0;
+        padding:  0;
+        &__item{
+            @include flexbox();
+            @include flex-direction(column);
+            background-color: #ebebeb;
+            @include mq-tablet {
+                background-color: #ffffff;
+            }
+            @include mq-desktop {
+                @include flex-direction(row);
+                background-color: #ffffff;
+            }
+            @media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+                padding: 0 rem(40px);
+            }
+        }
+        .vfes-layout{
+            &__item{
+                padding: 0;
+                &:first-child{
+                    margin-top: rem(24px);
+                    @include mq-desktop {
+                        margin-top: 0;
+                        padding: 0 rem(20px) 0 0;
+                    }
+                }
+            }
+        }
+        .vfes-cards-standard{
+            padding: rem(8px) rem(5px);
+            @include mq-tablet {
+                padding: rem(8px) rem(9px);
+            }
+            @include mq-desktop {
+                padding: rem(8px) rem(9px);
+            }
+            &__button{
+                display: none;
+                @include mq-tablet {
+                    display: inline-block;
+                    width: 30%;
+                    margin-right: rem(10px);
+                }
+                @include mq-desktop {
+                    display: inline-block;
+                    width: 30%;
+                    margin-right: rem(10px);
+                }
+                .vfes-button--secondary{
+                    margin: 0;
+                    @include mq-tablet {
+                        width: 100%;
+                        padding: rem(12px) rem(20px);
+                        font-size: rem(20px);
+                    }
+                    @include mq-desktop {
+                        width: 100%;
+                        padding: rem(12px) rem(20px);
+                        font-size: rem(20px);
+                    }
+
+                }
+            }
+            &__text p{
+                margin-bottom: 0;
+                font-family: 'VodafoneRegular';
+                font-size: rem(20px);
+                line-height: rem(24px);
+                padding-left: rem(20px);
+                padding-right: rem(36px);
+                @include mq-tablet {
+                    padding-right: rem(20px);
+                }
+                @include mq-desktop {
+                    padding-right: rem(15px);
+                }
+            }
+        }
+        .vfes-cards-standard.vfes-link{
+            &::after{
+                @include mq-tablet {
+                    display: none;
+                }
+                @include mq-desktop {
+                    display: none;
+                }
+            }
+        }
+        &-img{
+            width: rem(43px);
+            height: rem(43px);
+            padding: 0;
+            @include mq-tablet {
+                width: rem(88px);
+                height: rem(88px);
+            }
+            @include mq-desktop {
+                width: rem(88px);
+                height: rem(88px);
+            }
+
+        }
+        .item{
+            margin-bottom: rem(24px);
+            @include mq-tablet {
+                padding: 0 rem(20px);
+            }
+        }
+    }
+
+
+}
+.addon-lines-window__container {
+    :nth-child(2) {
+        .addon-lines-counter__label {
+            margin-top: rem(30px);
+        }
+    }
+}

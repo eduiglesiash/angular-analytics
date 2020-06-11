@@ -1,0 +1,103 @@
+@import '01-settings/index';
+@import '02-tools/index';
+
+.openModal {
+  pointer-events: none !important;
+  background: rgba(51, 51, 51, 0.75) !important;
+}
+
+.ftol-pointer {
+  cursor: pointer !important;
+}
+
+img[src="Error.src"] {
+  display: none;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.hide {
+  display: none;
+
+  &--sm {
+
+    @media only screen and (max-width: 640px),
+    only screen and (max-device-width: 640px) {
+      display: none !important;
+    }
+  }
+}
+
+.show {
+  display: block !important;
+}
+
+.opacity0 {
+  opacity: 0;
+  pointer-events: none;
+}
+
+img[src="Error.src"],
+img[src=""] {
+  opacity: 0;
+}
+
+.not-mobile {
+  display: none;
+
+  @include mq-tablet {
+    display: block;
+  }
+
+  @include mq-desktop {
+    display: block;
+  }
+}
+
+.mobile {
+  display: block;
+
+  @include mq-tablet {
+    display: none;
+  }
+
+  @include mq-desktop {
+    display: none;
+  }
+}
+
+.noCursor {
+  cursor: unset !important;
+}
+
+.scroll {
+  &--active {
+    overflow: auto;
+  }
+
+  &--block {
+    overflow: hidden !important;
+  }
+}
+
+.iosFixAutoComplete {
+  position: absolute;
+}

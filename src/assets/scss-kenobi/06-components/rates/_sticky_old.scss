@@ -1,0 +1,113 @@
+
+/* Sticky styles*/
+.vfes-sticky {
+    border-radius: rem( 6px);
+    background: #ffffffc7;
+    left: 0;
+    padding: 0 rem( 10px);
+    position: fixed;
+    top: rem( 47px);
+    width: 100%;
+    z-index: 9;
+    transition: top 0.3s ease-out;
+
+    &.hide {
+        display: none;
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+
+        &-item {
+            margin: 0;
+            transition: all .1s ease-in-out;
+            list-style: none;
+        }
+        .vfes-tag-label{
+            &::after{
+                display: none;
+            }
+            &__outstanding {
+                display: none;
+            }
+        }
+
+    }
+    &__button {
+        background: #fff;
+        border-radius: 100%;
+        display: none;
+        height: rem( 50px);
+        margin: -1.875rem auto;
+        position: relative;
+        width: rem( 50px);
+        z-index: 10;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        &::before{
+            content: "";
+            -ms-transform: rotate(135deg);
+            border-right: rem(1px) solid #E60000;
+            border-top: rem(1px) solid #E60000;
+            display: block;
+            height: rem(15px);
+            margin: rem(5px) auto 0;
+            transform: rotate(135deg);
+            width: rem(15px);
+
+        }
+
+        &.showstick{
+            display: block;
+            opacity: 1;
+            top: 100%;
+        }
+        &--squared{
+            background: #fff;
+            display: none;
+            height: rem( 30px);
+            margin: -23px auto;
+            position: relative;
+            width: rem( 30px);
+            z-index: 10;
+            transition: all 0.3s ease-in-out;
+            opacity: 0;
+            transform: rotate(135deg);
+            border-radius: rem( 6px);
+        }
+    }
+    &__button.activeMenu{
+        &::after{
+            margin: rem( 15px) auto 0;
+            transform: rotate(-45deg);
+
+        }
+    }
+    &__item--added {
+        height: 0;
+        opacity: 0;
+        margin: 0;
+        border-width: 0;
+        transition: all .3s ease-in-out;
+
+        &.vfes-tag-label.vfes-card-shop {
+            margin-top: 0;
+        }
+
+        &.showstick {
+            height: inherit;
+            opacity: 1;
+            margin: 0 auto rem( 3px);
+            border-width: rem( 1px);
+
+            &:first-child {
+                margin-top: rem( 3px);
+            }
+            .vfes-card-box-new__accordion-button {
+                right: rem( 16px);
+            }
+
+        }
+    }
+}

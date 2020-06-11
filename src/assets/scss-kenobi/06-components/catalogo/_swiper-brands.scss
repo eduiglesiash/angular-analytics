@@ -1,0 +1,17 @@
+ftol-carrusel-brands {
+  .swiper-pagination-bullet {
+    margin: 0 8px !important;
+    background-color: #cccccc !important;
+    opacity: 1 !important;
+    &.swiper-pagination-bullet-active {
+      background-color: #e60000 !important;
+      border: none !important;
+    }
+  }
+
+  &.carrusel-brands--shadow {
+    .carrusel-brands {
+      z-index: -1;
+    }
+  }
+}

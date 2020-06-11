@@ -1,0 +1,198 @@
+ftol-installation-delivery {
+  .delivery {
+    &__content {
+      .vfes-layout__item {
+        padding: 0;
+      }
+
+      ftol-delivery-hour-picker {
+        mat-icon.mat-icon {
+          &[svgIcon="v3:icon3-chevron-down"] {
+            top: .4rem;
+            right: .6rem;
+          }
+
+          &[svgicon="v3:icon3-tick-or-solved"] {
+            top: .4rem;
+            right: .6rem;
+          }
+        }
+      }
+
+      padding: rem( 16px);
+
+      .vfes-form {
+
+        &__radio {
+
+          &:active,
+          &:focus {
+            position: absolute;
+          }
+        }
+
+        &__label {
+          @include flexbox();
+          @include align-items(center);
+          font-size: rem( 18px);
+          line-height: rem( 24px);
+          $top: .6rem;
+
+          &::before {
+            top: $top !important;
+          }
+
+          &::after {
+            top: $top !important;
+          }
+
+          .mat-icon {
+            height: rem( 40px);
+            width: rem( 40px);
+            margin-right: rem( 12px);
+          }
+
+          strong {
+            @include flex(1);
+            font-size: rem( 24px);
+            text-align: right;
+
+            @include mq-desktop {
+              text-align: left;
+              margin-left: rem( 16px);
+              font-size: rem( 21px);
+              line-height: rem( 32px);
+            }
+          }
+
+          &.bold_label {
+            font-weight: bold;
+          }
+        }
+
+        &__box {
+          @include mq-desktop {
+            max-width: 50%;
+          }
+
+          button.vfes-button {
+            width: 100%;
+          }
+        }
+      }
+
+      .option {
+        @include flexbox();
+        @include align-items(center);
+      }
+
+      .label {
+        @include flexbox();
+        @include align-items(center);
+        @include flex(1);
+        font-size: rem( 20px);
+        padding-left: 1.875rem;
+
+
+        &>span {
+          @include flex(1);
+          font-weight: 400;
+        }
+
+        &__price {
+          font-size: rem( 24px);
+        }
+
+        mat-icon {
+          height: 33px;
+          width: 33px;
+        }
+      }
+
+      mat-error {
+        @include flexbox();
+        @include align-content(center);
+        @include align-items(center);
+        @include justify-content(flex-end);
+        margin-top: 1rem;
+
+        color: #e60000;
+        font-family: 'VodafoneRegular';
+        font-size: rem( 16px);
+
+        mat-icon {
+          height: rem( 33px);
+          width: rem( 33px);
+        }
+      }
+    }
+
+    &__date {
+      @include mq-desktop {
+        padding: 2rem 1rem .5rem;
+        border-radius: rem( 10px);
+        box-shadow: 0 rem( 5px) rem( 10px) 0 rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+      }
+
+      &__title {
+        display: none;
+        margin-bottom: 1rem;
+        font-family: VodafoneLt;
+        font-size: rem( 26px);
+
+        @include mq-desktop {
+          display: inline-block;
+        }
+      }
+
+      .row {
+        @include flexbox();
+        @include flex-dir(column);
+
+        @include mq-desktop {
+          @include flex-dir(row);
+
+          ftol-delivery-date-picker {
+            @include flex(1);
+            margin-right: rem( 32px);
+          }
+
+          ftol-delivery-hour-picker {
+            @include flex(1);
+          }
+        }
+      }
+
+      .portability-msg {
+        margin-bottom: rem( 16px);
+
+        @include mq-desktop {
+          margin-bottom: .25rem;
+
+          p {
+            display: inline;
+          }
+        }
+      }
+    }
+
+
+    &__wrapper-submit {
+      @include flexbox();
+      @include justify-content(flex-end);
+      @include mq-desktop {
+        margin-bottom: rem(20px);
+      }
+      button {
+        width: 100%;
+
+        @include mq-desktop {
+          width: auto;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+
+}

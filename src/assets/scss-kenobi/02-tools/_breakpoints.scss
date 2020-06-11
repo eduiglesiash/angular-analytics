@@ -1,0 +1,32 @@
+$breakpoint-mov: 640px;
+$breakpoint-tablet: 970px;
+$breakpoint-desktop: 1280px;
+
+@mixin mq-tablet {
+  @media only screen and (min-width: $breakpoint-mov) and (max-width: $breakpoint-tablet){
+    @content;
+  }
+}
+
+@mixin mq-desktop {
+  @media only screen and (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+@mixin mq-landscape {
+  @media only screen and (min-width: $breakpoint-mov) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin mq-explorer {
+  @media screen and (min-width:0\0) {
+    @content;
+  }
+}
+
+@mixin mq-ie {
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    @content;
+  }
+}

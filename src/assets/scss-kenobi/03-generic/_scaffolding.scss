@@ -1,0 +1,47 @@
+
+.vfes-u-mt-, .vfes-u-mv- {
+    margin-top: 0.75rem!important;
+}
+
+.vfc-u-mb {
+    margin-bottom: 0.75rem!important;
+}
+
+.vfc-u-mb\+ {
+    margin-bottom: 1.5rem!important;
+}
+
+.body-checkout {
+    background: map-get($colors, light-gray);
+    // min-height: 120vh;
+    overflow-x: hidden;
+    min-height: 150vh;
+    @include mq-tablet {
+        min-height: 100%;
+
+    }
+    @include mq-desktop {
+        min-height: 100%;
+    }
+}
+
+.vfes-layout__wrapper {
+    &.checkout {
+        @include mq-desktop {
+            max-width: 1280px;
+        }
+    }
+}
+
+#wrapperMain {
+    overflow: visible;
+}
+.fullHeight{
+    min-height: 100%;
+    padding: 0;
+   //animation: heightAnimation 1s ease-in-out;
+}
+//clase propia del date picker
+.cdk-global-scrollblock {
+    min-height: 150vh;
+}

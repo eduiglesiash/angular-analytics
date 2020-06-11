@@ -1,0 +1,587 @@
+%mock {
+  background: $vf-ligthgray;
+  border-radius: rem( 3px);
+  height: rem( 16px);
+}
+%mock-checkOut {
+  background: $vf_white3;
+  border-radius: rem( 12px);
+  color: $vf_white3;
+}
+
+.mock {
+
+  // horizontal
+  &--hl {
+    @extend %mock;
+    width: 100%;
+  }
+
+  &--hm {
+    @extend %mock;
+    width: 70%;
+    min-width: 104px;
+  }
+
+  &--hm-563 {
+    @extend %mock;
+    width: 100%;
+
+    @include mq-tablet {
+      width: 35.1875rem;
+    }
+
+    @include mq-desktop {
+      width: 35.1875rem;
+    }
+  }
+
+  &--hs {
+    @extend %mock;
+    width: 30%;
+  }
+
+  &--hs-216 {
+    @extend %mock;
+    @include flex(0 1 50%);
+
+    @include mq-tablet {
+      width: rem( 216px);
+      @include flex(none);
+    }
+
+    @include mq-desktop {
+      width: rem( 216px);
+      @include flex(none);
+    }
+  }
+
+  &--hs-138 {
+    @extend %mock;
+    width: 30%;
+
+    @include mq-tablet {
+      width: rem( 138px);
+    }
+
+    @include mq-desktop {
+      width: rem( 138px);
+    }
+  }
+
+  // vertical
+  &--vxl {
+    @extend %mock;
+    height: 70vh;
+  }
+
+  &--vl {
+    @extend %mock;
+    height: 40vh;
+  }
+
+  &--vl-452 {
+    @extend %mock;
+    height: rem( 200px);
+
+    @include mq-tablet {
+      height: rem( 350px);
+      margin-bottom: 1rem;
+    }
+
+    @include mq-desktop {
+      height: 28.25rem;
+    }
+  }
+
+  &--vl-338 {
+    @extend %mock;
+    height: 100%;
+    height: rem( 338px);
+  }
+
+  &--vm {
+    @extend %mock;
+    height: 25vh;
+  }
+
+  &--vm-93 {
+    @extend %mock;
+    height: rem( 93px);
+    ;
+  }
+
+  &--vs {
+    height: rem( 32px);
+  }
+
+  &--vs-48 {
+    height: rem( 48px);
+  }
+
+  &--vs-80 {
+    height: rem( 80px);
+  }
+
+  &--vs-113 {
+    height: rem( 113px);
+  }
+
+  &-title__xl {
+    @extend %mock;
+    min-height: rem( 41px);
+    margin-bottom: rem( 15px);
+  }
+
+  &-btn--arrow {
+    @extend %mock;
+    min-height: rem( 52px);
+    width: rem( 112px);
+  }
+
+  &-btn--arrow-large {
+    @extend %mock;
+    min-height: rem( 52px);
+    width: rem( 112px);
+
+    @include mq-tablet {
+      width: rem( 240px);
+    }
+
+    @include mq-desktop {
+      width: rem( 240px);
+    }
+  }
+
+  &--margin-top-medium {
+    margin-top: 0rem;
+
+    @include mq-tablet {
+      margin-top: 2rem;
+    }
+
+    @include mq-desktop {
+      margin-top: 2rem;
+    }
+  }
+
+  &--margin-top-small {
+    margin-top: 0rem;
+
+    @include mq-tablet {
+      margin-top: 1rem;
+    }
+
+    @include mq-desktop {
+      margin-top: 1rem;
+    }
+  }
+
+  &--margin-right-small {
+    margin-right: rem( 10px);
+
+    @include mq-tablet {
+      margin-top: 0px;
+    }
+
+    @include mq-desktop {
+      margin-top: 0px;
+    }
+  }
+
+  &.catalog {
+    .phone-list {
+      &__container {
+        padding: rem( 10px);
+      }
+
+      &__list {
+        margin-left: 1rem;
+
+        @include mq-tablet {
+          margin-left: 1rem;
+        }
+
+        @include mq-desktop {
+          margin-left: 0px;
+        }
+      }
+
+      &__header {
+        @media only screen and (max-width: $breakpoint-tablet) and (min-width: $breakpoint-mov) {
+          margin: rem( 20px) rem( 6px);
+        }
+
+        @media only screen and (min-width: $breakpoint-tablet) {
+          margin: rem( 20px) rem( 6px);
+        }
+
+        &__wrapper-buttons {
+          @include flexbox();
+          @include justify-content(space-between);
+        }
+      }
+
+      &__items-box {
+        width: 100%;
+        margin-bottom: rem( 22px);
+
+        @media only screen and (max-width: $breakpoint-tablet) and (min-width: $breakpoint-mov) {
+          width: 50%;
+        }
+
+        @media only screen and (min-width: $breakpoint-tablet) {
+          width: 33.3%;
+        }
+      }
+
+      &__items {
+        width: rem( 300px);
+        padding: rem( 20px) 0 rem( 8px);
+
+        @media only screen and (max-width: $breakpoint-tablet) and (min-width: $breakpoint-mov) {
+          width: rem( 340px);
+          padding: rem( 20px) 0;
+        }
+
+        @media only screen and (min-width: $breakpoint-tablet) {
+          width: rem( 340px);
+          padding: rem( 20px) 0;
+        }
+      }
+
+      &__image {
+        border-radius: rem( 3px);
+        background: #ebebeb;
+        min-width: 40%;
+        min-height: rem( 220px);
+        margin-right: rem( 14px);
+      }
+    }
+  }
+
+  &.ficha {
+    padding: rem( 23px) rem( 20px);
+
+    .ftol-breadcrumbs {
+      max-width: rem( 140px);
+    }
+
+    .mock.stock-container {
+      @extend %mock;
+      width: rem( 179px);
+      color: transparent !important;
+
+      p {
+        padding: rem( 5px) 0 !important;
+
+        svg {
+          display: none !important;
+        }
+      }
+    }
+
+    // aumentar especificidad
+    .container-img.container-img.container-img.container-img {
+      @extend %flexbox;
+      @include justify-content(center);
+      margin: 0 auto .3rem;
+
+      .terminal-img {
+        @extend %mock;
+        height: rem( 220px);
+        @include flex(1);
+
+        @include mq-tablet {
+          height: rem( 330px);
+          @include flex(1, 0, 30%);
+        }
+
+        @include mq-desktop {
+          height: 27.5rem;
+        }
+      }
+
+      .prices {
+        @include flex(0, 1, 50%);
+        margin: 0 .3rem;
+
+
+        @include mq-tablet {
+          @include flex(0, 1, 20%);
+          margin-left: rem( 7px);
+        }
+
+        @include mq-desktop {
+          @include flex(0, 1, 30%);
+        }
+
+        .registerType {
+          @extend %mock;
+          width: rem( 150px);
+          margin-left: 0px;
+        }
+
+      }
+
+      .rates {
+        display: none;
+
+        @include mq-tablet {
+          display: block;
+          @include flex(1, 0);
+        }
+
+        @include mq-desktop {
+          display: block;
+          @include flex(1, 0);
+        }
+
+        .skeleton {
+          @include flexbox();
+          @include justify-content(flex-start);
+          @include flex-dir(column);
+          margin-bottom: 1rem;
+
+          &__wrapper {
+            min-width: rem( 300px);
+
+            @include mq-tablet {
+              min-width: rem( 271px);
+            }
+
+            @media only screen and (min-width: 620px) and (max-width: 747px) {
+              min-width: rem( 350px);
+            }
+
+            @include mq-desktop {
+              width: 31.25rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.mock.ficha__selectors {
+  margin-top: rem( 2px);
+  border: none !important;
+  box-shadow: none !important;
+  background: $vf-ligthgray !important;
+  @extend %mock;
+
+  .vfes-title--4 {
+    color: #ebebeb;
+  }
+
+  .selector-items {
+    display: none !important;
+  }
+}
+// ticket checkOut
+ftol-cart {
+  .mockCheckOut {
+    background: $vf-ligthgray;
+    color: $vf-ligthgray;
+    box-shadow: none !important;
+    .mat-expansion-panel, .cart-total-discounts-container, .footer {
+      opacity: 0;
+    }
+  }
+}
+
+// skeleton-checkOut
+
+.skeleton-checkOut {
+  background-color: map-get($colors, white-pure);
+  height: 100vh;
+  &__head {
+    @extend %mock-checkOut;
+    width: 100%;
+    height: rem(48px);
+    border-radius: 0;
+    @include mq-desktop {
+      height: rem(80px);
+
+    }
+  }
+  &__body {
+    max-width: rem(1280px);
+    margin: 0 auto;
+    padding: rem(14px) rem(16px) rem(30px);
+    @include mq-tablet {
+      padding: rem(20px) rem(16px) rem(30px);
+    }
+    @include mq-desktop {
+      padding: rem(20px) rem(50px) rem(30px);
+    }
+  }
+  &__ticket {
+    @extend %mock-checkOut;
+    width: 100%;
+    height: rem(61px);
+    margin-bottom: rem(32px);
+    @include mq-tablet {
+      margin-bottom: rem(36px);
+      height: rem(69px);
+    }
+    @include mq-desktop {
+      display: none;
+    }
+    &-xl {
+      display: none;
+      @include mq-desktop {
+        display: inline-block;
+        width: rem(381px);
+        height: rem(255px);
+        margin-left: rem(24px);
+      }
+    }
+  }
+  &__navigation {
+    @include flexbox();
+    @include justify-content(flex-start);
+    @include flex-direction(column);
+    @include align-items(flex-start);
+    @include mq-desktop {
+      @include flex-direction(row);
+      @include justify-content(flex-start)
+    }
+    &-l{
+      display: none;
+      @include mq-tablet {
+        @include flexbox();
+        margin-top: rem(40px);
+      }
+    }
+    &-item {
+      @extend %mock-checkOut;
+      display: inline-block;
+      width: auto;
+      position: relative;
+      margin-left: rem(60px);
+      overflow: visible;
+      margin-bottom: rem(32px);
+      @include mq-tablet {
+        margin-bottom: (36px);
+      }
+      @include mq-desktop {
+        margin-right: rem(25px);
+      }
+      &::before {
+        content: '';
+        width: rem(40px);
+        height: rem(40px);
+        background-color: $vf_white3;
+        border-radius: 50%;
+        position: relative;
+        top: rem(20px);
+        position: absolute;
+        top: rem(-10px);
+        left: rem(-60px);
+      }
+      &-xl {
+        display: none;
+        @include mq-desktop {
+          display: inline-block;
+        }
+      }
+    }
+  }
+  &__steps {
+    @include flexbox();
+    @include justify-content(flex-start);
+    @include flex-direction(column);
+    @include align-items(flex-start);
+    margin-bottom: rem(25px);
+    @include mq-tablet {
+      display: none;
+    }
+    @include mq-desktop {
+      display: none;
+    }
+    &-item {
+      @extend %mock-checkOut;
+      display: inline-block;
+      width: auto;
+      position: relative;
+      margin-bottom: rem(8px);
+      &:first-child {
+        margin-bottom: rem(18px);
+      }
+    }
+  }
+  &__title {
+    @extend %mock-checkOut;
+    width: 90%;
+    height: rem(24px);
+    margin-bottom: rem(8px);
+    @include mq-tablet {
+      width: 50%;
+      margin-bottom: rem(12px);
+      margin-top: rem(10px);
+    }
+    @include mq-desktop {
+      width: 30%;
+      height: rem(40px);
+      margin-bottom: rem(16px);
+    }
+    &-addons {
+      margin-top: rem(8px);
+      @include mq-tablet {
+        display: none;
+      }
+    }
+  }
+  &__form {
+    @extend %mock-checkOut;
+    width: 100%;
+    height: rem(164px);
+    @include mq-tablet {
+      height: rem(300px);
+    }
+    @include mq-desktop {
+      height: rem(221px);
+    }
+    &-content {
+      margin-bottom: rem(17px);
+      @include mq-desktop {
+        @include flexbox();
+        margin-bottom: rem(-58px);
+      }
+
+    }
+  }
+  &__addons {
+    @extend %mock-checkOut;
+    width: 100%;
+    height: rem(66px);
+    margin-bottom: rem(14px);
+    @include mq-tablet {
+      display: none;
+    }
+    @include mq-desktop {
+      width: 73.7%;
+      margin-bottom: rem(18px);
+    }
+  }
+  &__button {
+    @extend %mock-checkOut;
+    width: 100%;
+    height: rem(46px);
+    @include mq-tablet {
+      display: none;
+    }
+    @include mq-desktop {
+      width: 10.5%;
+      margin-left: 63.2%;
+    }
+    &-l {
+      display: none;
+      @include mq-tablet {
+        display: block;
+      }
+    }
+  }
+}

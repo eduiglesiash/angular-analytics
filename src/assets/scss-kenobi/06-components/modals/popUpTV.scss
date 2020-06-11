@@ -1,0 +1,243 @@
+.popUpTV {
+
+  @include flex-direction(column);
+
+  @include mq-tablet {
+    @include flex-direction(row);
+  }
+
+  @include mq-desktop {
+    @include flex-direction(row);
+    margin: auto;
+    padding: 0 rem(100px);
+  }
+
+  &__title {
+    font-size: rem(24px);
+    line-height: rem(30px);
+    text-align: center;
+    margin: rem(16px) 0;
+    font-family: 'VodafoneRegular';
+
+    @include mq-desktop {
+      font-family: 'VodafoneLight';
+      font-size: rem(40px);
+      line-height: rem(48px);
+    }
+
+    span {
+      display: block;
+
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-size: rem(16px);
+    line-height: rem(20px);
+
+    @include mq-desktop {
+      font-size: rem(18px);
+      line-height: rem(24px);
+      margin-bottom: rem(24px);
+    }
+  }
+
+  &__container {
+    @include flexbox();
+    @include flex-direction(column);
+
+    @include mq-desktop {
+      @include flex-direction(row);
+    }
+  }
+
+  &__content {
+    @include flex(1);
+    margin-bottom: rem(16px);
+
+    &:first-child {
+      margin-bottom: rem(32px);
+
+      @include mq-desktop {
+        margin-right: rem(42px);
+        margin-bottom: rem(16px);
+
+      }
+    }
+
+    &__immage {
+      margin-bottom: rem(16px);
+      text-align: center;
+
+      img {
+        max-width: rem(96px);
+      }
+    }
+
+    &__title {
+      font-family: 'VodafoneLight';
+      font-size: rem(28px);
+      line-height: rem(34px);
+      text-align: center;
+      margin-bottom: rem(16px);
+    }
+
+    &__text {
+      font-family: 'VodafoneRegular';
+      font-size: rem(18px);
+      line-height: rem(24px);
+      text-align: center;
+    }
+
+    &__card {
+      padding: rem(16px) rem(70px);
+      text-align: center;
+      border: 1px solid #979797;
+      border-radius: rem(8px);
+
+      @include mq-desktop {
+        padding: rem(16px) rem(54px);
+      }
+    }
+  }
+
+  &__info {
+    letter-spacing: normal;
+    text-align: center;
+    font-size: rem(14px);
+    line-height: rem(16px);
+    color: #333333;
+  }
+  &__buttons {
+    padding: 0;
+    margin-top: rem(24px);
+    @include flexbox;
+    @include justify-content(space-around);
+    .deco-button {
+      max-width: 36%;
+      &:last-child {
+          margin-right: 0;
+      }
+  }
+}
+}
+ftol-wcs-modal {
+
+  .privacity {
+    .custom-modal {
+      max-width: rem(375px) !important;
+
+      @include mq-tablet {
+        max-width: rem(728px) !important;
+      }
+
+      @include mq-desktop {
+        max-width: 72.5rem !important;
+      }
+    }
+
+    .nsm-content {
+      padding: 3.125rem 1rem 0;
+      margin: 0 !important;
+
+      @include mq-tablet {
+        padding: rem(42px) rem(30px) 2.625rem;
+        margin-top: rem(72px) !important;
+      }
+
+      @include mq-desktop {
+        margin-top: rem(72px) !important;
+        padding: 3.125rem 5.5rem 2.625rem;
+      }
+
+      .nsm-body {
+        .vfes-layout {
+          padding-bottom: 1rem;
+            
+          .vfes-card {
+            padding: 0px !important;
+            
+            @include mq-desktop {
+              padding: 0 53px !important;
+            }
+          }
+          @include mq-tablet {
+            .vfes-flex__direction--row-column-sm {
+              @include flex-direction(row);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ftol-wcs-modal.simpleDeco{
+  .privacity {
+    .custom-modal {
+      @include mq-desktop {
+        max-width: rem(728px) !important;
+      }
+      .nsm-content {
+        padding: 3.125rem 1rem 0;
+        margin: 0 !important;
+  
+        @include mq-desktop{
+          padding: rem(42px) rem(30px) rem(32px);
+          margin-top: rem(72px) !important;
+        }
+        .popUpTV {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+ngx-smart-modal[identifier="decoModal"] {
+.custom-modal {
+      max-width: rem(375px) !important;
+
+      @include mq-tablet {
+        max-width: rem(728px) !important;
+      }
+
+      @include mq-desktop {
+        max-width: 72.5rem !important;
+      }
+    }
+
+    .nsm-content {
+      padding: 3.125rem 1rem rem(32px);
+      margin: 0 !important;
+
+      @include mq-tablet {
+        padding: rem(42px) rem(30px) 2.625rem;
+        margin-top: rem(72px) !important;
+      }
+
+      @include mq-desktop {
+        margin-top: rem(72px) !important;
+        padding: 3.125rem 5.5rem 2.625rem;
+      }
+
+      .nsm-body {
+        .vfes-layout {
+          padding-bottom: 1rem;
+            
+          .vfes-card {
+            padding: 0px !important;
+            
+            @include mq-desktop {
+              padding: 0 53px !important;
+            }
+          }
+          @include mq-tablet {
+            .vfes-flex__direction--row-column-sm {
+              @include flex-direction(row);
+            }
+          }
+        }
+      }
+    }
+  
+}

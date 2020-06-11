@@ -1,0 +1,22 @@
+ngx-smart-modal.modal-loading {
+  .overlay {
+    background: #333333bf !important;
+    @include flexbox();
+    @include flex-just(center);
+    @include align-items(center);
+    z-index: 999999 !important;
+  }
+
+  .nsm-content {
+    background: none;
+    box-shadow: none;
+  }
+
+  .modal-loading__text {
+    color: $vf-white;
+    text-align: center;
+    font-size: rem( 18px);
+    width: rem( 160px);
+    margin: auto;
+  }
+}

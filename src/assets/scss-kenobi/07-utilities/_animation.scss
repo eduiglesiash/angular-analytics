@@ -1,0 +1,6 @@
+.ftol-a {
+
+  &--transition {
+    @include prefix((transition: .5s));
+  }
+}

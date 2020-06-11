@@ -1,0 +1,28 @@
+@import './c2c/index';
+@import './bolo-promocion/index';
+@import './catalogo/index';
+@import './ficha/index';
+@import './forms/index';
+@import './layout/index';
+@import './rates/index';
+@import './pages/index';
+@import './modals/index';
+@import './filters';
+@import './skeleton';
+@import './sticky';
+@import './cart/index';
+@import 'ui-switch';
+@import 'imports.components.ws10';
+@import 'swiper.component';
+@import 'ngx-smart-modal.component';
+@import 'check-out/index';
+@import 'television/index';
+// componentes importados de dsl
+@import '~@vodafone-es/web-simplicity-2-reboot/resources/assets/styles/06-components/component.card';
+@import '~@vodafone-es/web-simplicity-2-reboot/resources/assets/styles/06-components/component.tag-label';
+.vfes-ws10 {
+    @import '~@vodafone-es/web-simplicity-2-reboot/resources/assets/styles/06-components/component.card.ws10';
+    @import '~@vodafone-es/web-simplicity-2-reboot/resources/assets/styles/06-components/component.card-rate.ws10';
+    @import '~@vodafone-es/web-simplicity-2-reboot/resources/assets/styles/06-components/component.tag-label.ws10';
+}
+

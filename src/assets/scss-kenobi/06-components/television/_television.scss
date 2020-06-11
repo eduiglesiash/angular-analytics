@@ -1,0 +1,23 @@
+div {
+  &.mat-expansion-panel-body {
+    padding: 0px;
+    p.vfes-paragraph {
+      text-align: left;
+    }
+  }
+}
+
+ul {
+  &.vfes-card-rate {
+    &__datalist {
+      width: 100%;
+    }
+  }
+}
+.okAlert {
+  .content-wrapper {
+    p {
+      margin: 0;
+    }
+  }
+}

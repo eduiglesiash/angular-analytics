@@ -1,0 +1,106 @@
+destiny-dropdown {
+    .mat-form-field-infix{
+        border-top: rem( 10px) solid transparent;
+        padding: 0 0 rem( 10px) !important;
+    }
+    .mat-select-trigger{
+        font-family: 'VodafoneRegular';
+        font-size: rem( 16px);
+        line-height: rem( 20px);
+    }
+}
+
+.mat-checkbox-layout {
+    .mat-checkbox-label {
+       line-height: 1.25rem;
+       white-space: normal;
+       font-weight: normal;
+       font-size: 1rem;
+       font-family: 'VodafoneRegular';
+    }
+}
+.mat-form-field-infix{
+    .mat-checkbox-label{
+        cursor: default;
+        button{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}
+destiny-checkbox {
+
+    .mat-form-field-underline {
+        display: none;
+    }
+    .mat-form-field-wrapper {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .mat-form-field-infix {
+        padding: 0 !important;
+        border-top: .24375em solid transparent;
+    }
+    .mat-form-field-subscript-wrapper {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .mat-checkbox-inner-container {
+        width: rem( 20px);
+        height: rem( 20px);
+        margin-top: 0px;
+        @include mq-tablet {
+            margin-top: auto;
+        }
+        @include mq-desktop {
+            margin-top: auto;
+        }
+        .monthlyPayment__content__aceptos__modal {
+            @include mq-tablet {
+                margin-top: 0;
+            }
+            @include mq-desktop {
+                margin-top: 0;
+            }
+        }
+        .monthlyPayment__content &{
+            @include mq-tablet {
+                margin-top: 0;
+            }
+            @include mq-desktop {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &.payout {
+        .mat-checkbox-inner-container {
+            margin-top: 0px;
+            @include mq-explorer{
+                margin-top: rem( 5px);
+            }
+            .form-upfront-payment &{
+                margin-right: rem( 16px);
+                margin-left: rem( 5px);
+            }
+        }
+    }
+
+    .mat-checkbox-checkmark {
+        height: rem( 16px);
+        top: rem( 1px);
+    }
+
+    .mat-checkbox-background {
+        border-radius: rem( 3px);
+    }
+
+    .mat-checkbox-checked .mat-checkbox-background {
+        background: map-get($colors, dark-cyan) !important;
+    }
+
+    mat-error {
+        margin-top: 0 !important;
+    }
+}

@@ -1,0 +1,23 @@
+ngx-smart-modal[identifier="detailImg"] {
+  .nsm-body {
+    height: calc(100vh - 46px);
+
+    @include mq-tablet {
+      height: auto;
+    }
+
+    @include mq-desktop {
+      height: auto;
+    }
+  }
+
+  .swiper-container {
+    img.ftol-pointer {
+      max-height: 77vh;
+    }
+
+    .swiper-pagination {
+      margin: .5rem 0;
+    }
+  }
+}

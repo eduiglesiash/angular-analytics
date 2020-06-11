@@ -1,0 +1,25 @@
+ftol-scroll-up {
+  &.preticket.ficha {
+    button {
+      bottom: calc(140px + 96px); // altura del ticket más espacio al scroll up
+      margin-bottom: 0;
+
+      @include mq-desktop {
+        bottom: 0;
+      }
+    }
+  }
+}
+
+ftol-c2c-sticky {
+  &.preticket.ficha {
+    button {
+      bottom: calc(140px + 32px); // altura del ticket más espacio al c2c
+      margin-bottom: 0;
+
+      @include mq-desktop {
+        bottom: 0;
+      }
+    }
+  }
+}

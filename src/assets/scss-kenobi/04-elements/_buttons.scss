@@ -1,0 +1,129 @@
+button {
+  background: 0 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  overflow: visible;
+  -webkit-appearance: button;
+  cursor: pointer;
+  color: rgb(51, 51, 51);
+
+  &.full-width{
+    width: 100%;
+  }
+}
+
+.ftol-btn {
+
+  // ftol-btn--just  ➡️ boton justificado con espacio entre texto e iconos
+  &--just {
+    @include flexbox();
+    @include justify-content(space-between);
+  }
+
+  &--arrow {
+    width: 100%;
+    padding: rem( 12px);
+    font-size: 0.875rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    background: $vf-white;
+    outline: none !important;
+    border: solid rem( 1px) $vf-dark !important;
+
+    @include mq-tablet {
+      width: auto;
+    }
+
+    &:hover,
+    &:focus {
+      background: $vf-white;
+      outline: none !important;
+      border: solid rem( 1px) $vf-dark !important;
+    }
+
+    &:after {
+      content: '';
+      @include arrow($direction: "down", $width: 12px, $thin: "true");
+      display: inline-block;
+      margin-left: 1rem;
+      transition: .5s;
+    }
+
+    &--up {
+      &:after {
+        // TODO: use mixin ⏬
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        margin-top: rem( 6px);
+      }
+    }
+
+    &--down {
+      &:after {
+        // TODO: use mixin ⏬
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        margin-bottom: 0;
+      }
+    }
+
+    &.checked {
+      border-bottom: none !important;
+      z-index: 6;
+      position: relative;
+      padding: rem( 12px);
+      font-size: 0.875rem;
+      box-shadow: none;
+
+      &:after {
+        // TODO: use mixin ⏬
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        margin-bottom: -5px;
+      }
+
+      &:before {
+        content: '';
+        width: 99%;
+        height: rem( 5px);
+        display: block;
+        background: $vf-white;
+        position: absolute;
+        bottom: -3px;
+        left: rem( 1px);
+      }
+    }
+  }
+}
+
+
+.button-submit {
+  cursor: pointer;
+  min-width: rem( 122px);
+  padding: 0.625rem 1rem;
+  color: map-get($colors, white-pure);
+  font-size: 1.25rem;
+  border-radius: rem( 5px);
+  line-height: 1.2;
+  z-index: 10;
+  width: 100%;
+  @include mq-tablet {
+      width: auto;
+  }
+  @include mq-desktop {
+      width: auto;
+  }
+
+  &--red {
+      background-color: map-get($colors, dark-red);
+  }
+  &--full{
+    width: 100%;
+
+  }
+}
+

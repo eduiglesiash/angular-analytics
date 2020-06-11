@@ -1,0 +1,40 @@
+.check-out {
+  &__content {
+    padding: rem(16px) rem(16px) rem(24px);
+    @include mq-desktop {
+      padding: 0 rem(7px);
+    }
+    &.mockCheckOut {
+      .check-out__title, .check-out__sub-title {
+        background: $vf-ligthgray;
+        color: $vf-ligthgray;
+        border-radius: rem(12px);
+        display: table;
+      }
+    }
+  }
+  &__title {
+    font-size: rem(20px);
+    line-height: rem(30px);
+    font-weight: normal;    
+    color: map-get($colors, dark-black);
+    margin-top: 0;
+    margin-bottom: rem(16px);
+    font-family: "VodafoneRegular";
+    @include mq-tablet {
+      font-size: 1.625rem;
+      margin: 0 0 rem(24px);
+    }
+    @include mq-desktop {
+      font-family: "VodafoneLight";
+      font-size: rem(26px);
+      margin: rem(12px) 0 rem(24px) 0;
+    }
+  }
+  &__sub-title{
+    font-size: rem(14px);
+    line-height: rem(18px);
+    color: $color-abbey;
+    margin-bottom: rem(16px);
+  }
+}

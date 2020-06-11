@@ -1,0 +1,68 @@
+
+// LOAD VERSION WS10
+@import '~@vodafone-es/web-simplicity-2-reboot/resources/assets/styles/08-angular/_angular.required.ws10.scss';
+@import '~@vodafone-es/web-simplicity-2-reboot/resources/assets/styles/08-angular/_angular.ws10.scss';
+
+
+// Style Angular Material
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~@angular/cdk/overlay-prebuilt.css';
+
+@import '01-settings/index';
+@import '02-tools/index';
+@import '03-generic/index';
+@import '04-elements/index';
+@import '05-objects/index';
+@import '06-components/index';
+@import '07-utilities/index';
+@import '~swiper/dist/css/swiper.min.css';
+
+
+// libs
+// .optanon-alert-box-wrapper  {
+//   display: none !important;
+// }
+.swiper {
+  &-pagination {
+    position: static;
+  }
+}
+
+.swiper-container {
+  margin: 0 1.5rem;
+
+  @include mq-tablet {
+    margin: auto;
+  }
+
+  @include mq-desktop {
+    margin: auto;
+  }
+}
+
+
+.swiper-slide {
+  text-align: center;
+}
+
+.swiper-lazy-preloader {
+  margin: auto;
+}
+
+.swiper-pagination {
+  margin: 1rem 0;
+}
+
+.swiper-pagination-bullet-active {
+  border: 1px solid #373737;
+  background: #fff;
+}
+
+
+
+// customization smart-modal
+// https://github.com/biig-io/ngx-smart-modal#style--customization
+// $dialog-position-top: 60px;
+// $color-overlay: $vf-dark;
+@import "~ngx-smart-modal/ngx-smart-modal";
+

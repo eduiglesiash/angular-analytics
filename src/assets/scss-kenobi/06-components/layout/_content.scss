@@ -1,0 +1,47 @@
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+p{
+    margin: 0 0 15px;
+    line-height: 1.3em;
+    @include mq-tablet() {
+        //margin: 0 0 15px;
+    }
+}
+.wrapper{
+    overflow: visible;
+}
+.wrapper.rhomb>.spring {
+    max-width: 100%;
+    padding: 0;
+    min-width: 320px;
+    width: 100%;
+}
+.wrapper.rhomb>.spring>.content {
+    background: 0 0;
+    overflow: visible;
+}
+.vfes-layout {
+    &__wrapper{
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+        outline: 0;
+        padding: 0 rem( 10px) ;
+        @include mq-tablet{
+            padding: 0 ;
+        }
+        @include mq-desktop{
+            padding: 0 ;
+        }
+    }
+}
+.vfes-title--2, .vfes-title--3, .vfes-title--4, .vfes-title--5, .vfes-title--6, .vfes-title--7, .vfes-title--8 {
+    
+    font-weight: 400;
+    line-height: 1.3em;
+    margin: 0;
+    text-align: left;
+    font-family: VodafoneLight;
+}

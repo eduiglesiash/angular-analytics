@@ -1,0 +1,14 @@
+%custom-scroll-bar {
+  -ms-overflow-style: none; // IE 10+ scrollbar hide
+  scrollbar-width: none; // Firefox scrollbar hide
+
+  &::-webkit-scrollbar {
+    display: block; //crome scrollbar visible
+    width: rem(7px);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: map-get($colors, gray-pure);
+  }
+}

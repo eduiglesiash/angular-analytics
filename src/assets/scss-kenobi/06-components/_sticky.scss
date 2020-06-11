@@ -1,0 +1,101 @@
+.ftol-sticky {
+  &__btn-up-form {
+    font-size: 1.125rem;
+    padding: rem( 6px) 0px;
+    font-family: VodafoneRegular;
+    line-height: 1.4625rem;
+    @include mq-tablet {
+      padding: rem( 12px) rem( 10px);
+    }
+    @include mq-desktop {
+      margin-bottom: .5rem;
+      padding: rem( 12px) rem( 10px);
+    }
+  }
+
+  &--dark {
+    background: $vf-dark;
+    color: $vf-white;
+  }
+}
+
+.c2c {
+  &__label-call {
+    &-wrapper {
+      background: $vf-dark;
+      color: $vf-white;
+      padding: 0;
+      @include flexbox();
+      @include justify-content(center);
+      @include align-items(center);
+      @include flex-direction(column);
+      @include mq-tablet {
+        display: none;
+      }
+      @include mq-desktop {
+        padding: rem( 9px) 0.7rem 0;
+      }
+
+      div {
+        margin: 0;
+        font-size: 1.125rem;
+        text-indent: 0.5rem;
+
+        svg {
+          stroke: none;
+          position: absolute;
+          top: -0.9rem;
+          left: 0.9rem;
+          width: rem( 48px);
+          height: rem( 48px);
+          background-color: $vf-green;
+          border-radius: 50%;
+          padding: rem( 7px);
+          border: solid rem( 1px) $vf-white;
+          margin-left: rem( 6px);
+        }
+
+        p {
+          margin: 0 0.5rem 0 0;
+          span {
+            font-size: 1rem;
+            line-height: 1.3rem;
+            &:nth-child(1){
+              display: block;
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .icon-arrow {
+        width: rem( 26px);
+        height: rem( 26px);
+        text-align: right;
+        @include justify-content(center);
+        @include flexbox();
+        position: absolute;
+        right: 1.4rem;
+        top: 0.9rem;
+        transform: rotate(90deg);
+      }
+    }
+  }
+  &-sticky__wrapper {
+    margin: 0 auto;
+    max-width: 1070px;
+    max-height: rem( 115px);
+
+    @media screen and (min-width: 0\0) {
+      max-height: 100%;
+    }
+
+    @include mq-tablet {
+      max-height: 100%;
+    }
+
+    @include mq-desktop {
+      max-height: 100%;
+    }
+  }
+}

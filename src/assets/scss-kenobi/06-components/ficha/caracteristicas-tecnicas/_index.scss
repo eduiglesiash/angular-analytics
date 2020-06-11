@@ -1,0 +1,77 @@
+ftol-terminal-caracteristicas-tecnicas {
+  .vfes-title {
+    margin-bottom: rem( 10px);
+
+    @include mq-desktop {
+      display: none;
+    }
+  }
+
+
+  table {
+    width: 100%;
+    margin: auto;
+
+    tbody {
+      tr {
+          $height: rem( 23px);
+          border: none;
+          @include flexbox();
+          @include justify-content(space-between);
+          border-bottom: rem( 1px) solid #979797;
+          padding: rem( 7px) 0;
+
+          svg {
+            position: relative;
+            width: $height;
+            height: $height;
+            margin-right: .75rem;
+            stroke: currentColor;
+            fill: currentColor;
+            stroke-width: 0;
+          }
+
+          th {
+            @include flexbox();
+            @include align-items(baseline);
+            padding: rem( 7px) 0;
+
+            p {
+              display: inline-block;
+              margin: 0;
+              font-family: 'VodafoneRgBold';
+              font-size: rem( 16px);
+              line-height: 1;
+            }
+          }
+
+          td {
+              @include flexbox();
+              width: 55%;
+              @include justify-content(flex-end);
+              @include flex-direction(column);
+              padding: rem( 7px) 0;
+
+              @include mq-tablet {
+                  width: 70%;
+              }
+
+              p {
+                  margin: 0;
+                  font-family: 'VodafoneRegular';
+                  font-size: 0.875rem;
+                  line-height: 1.125rem;
+                  text-align: right;
+                  color: #4a4a4a;
+              }
+          }
+      }
+    }
+  }
+
+  .device-feature__title {
+    @include flexbox();
+    @include align-items(flex-end);
+  }
+
+}

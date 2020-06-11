@@ -1,0 +1,140 @@
+ftol-address-transactional-new{
+  @extend ftol-address-transactional;
+}
+
+ftol-address-transactional {
+
+  @include flexbox();
+  @include flex-direction(column);
+  @include flex(1);
+
+  .formbody {
+    @include flex(1);
+    @include mq-desktop() {
+      @include flex(0);
+    }
+    &>section {
+      margin: rem(30px) 0 0 0;
+    }
+  }
+
+  .wrapper-address-transactional {
+
+    &__title {
+      text-align: center;
+      font-family: 'vodafoneRegular';
+      font-size: rem(24px);
+      line-height: rem(30px);
+      font-weight: normal;
+      margin: rem(16px) 0 rem(24px);
+    }
+
+    &__link {
+      width: 100%;
+      padding: 0;
+      @include flexbox();
+      @include align-items(center);
+      @include justify-content(center);
+      text-decoration: underline;
+      position: relative;
+
+      @include mq-tablet() {
+        // padding: 1rem 0;
+      }
+
+      @include mq-desktop() {
+        // padding: 1rem 0;
+      }
+
+      .mat-icon {
+        width: rem(28px);
+        height: rem(28px);
+      }
+
+      span {
+        font-family: 'VodafoneRegular';
+        margin: 0 0 1rem 0.7rem;
+        font-size: rem(16px);
+        line-height: rem(20px);
+      }
+    }
+
+    &__combos {
+      @include flexbox();
+      @include flex-wrap(wrap);
+      @include justify-content(space-between);
+      margin-top: rem(22px);
+
+      .mat-form-field-appearance-outline .mat-form-field-flex {
+        padding: 0 0.75rem 0 1rem;
+      }
+    }
+
+    &__number {
+      width: 60%;
+      margin-right: 1rem;
+    }
+
+  }
+
+  form {
+    height: 100%;
+    min-height: 100%;
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(flex-start);
+
+    .formbody {
+      .ng-star-inserted {
+        p {
+          font-size: rem(16px);
+          line-height: rem(20px);
+        }
+      }
+
+      .candidates {
+        ftol-radio {
+          .mat-radio-label-content {
+
+            @include mq-tablet {
+              width: auto;
+            }
+
+            @include mq-desktop {
+              width: auto;
+            }
+          }
+        }
+      }
+
+    }
+
+    .submit {
+      position: relative;
+      width: 100%;
+
+      @include mq-tablet {
+        bottom: 0;
+      }
+
+      @include mq-desktop {
+        bottom: 0;
+      }
+
+      &__options-2 {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        top: 0;
+      }
+
+      .button-submit {
+        width: 100%;
+
+        &.disabled {
+          background: map-get($colors, light-gray-3);
+        }
+      }
+    }
+  }
+}

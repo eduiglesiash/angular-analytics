@@ -1,0 +1,12 @@
+.addon-lines-window {
+    &__items {
+        &:nth-of-type(3) {
+            ftol-addon-lines-rate {
+                .addon-lines-counter__label {
+                   // margin-top: rem(27px);
+                }
+            }
+        }
+
+    }
+}

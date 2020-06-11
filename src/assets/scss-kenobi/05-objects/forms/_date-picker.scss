@@ -1,0 +1,32 @@
+ftol-delivery-date-picker, ftol-installation-date-picker {
+  .mat-form-field-flex {
+    .mat-form-field-infix {
+      font-size: rem( 16px);
+      line-height: rem( 20px);
+      border-top: 0.625rem solid transparent;
+      padding:0 0 .625rem !important;
+    }
+    .mat-form-field-suffix{
+      right: 30px;
+      button{
+        .mat-icon{
+          transform: translate(rem(10px), .625rem);
+        }
+      }
+    }
+  }
+}
+
+.mat-calendar {
+  .mat-calendar-table-header {
+    color: $color-dove-gray;
+  }
+  &-body-selected {
+    background-color: $vfes-color-bg-vodafone-red;
+  }
+
+  &-body-disabled &-body-cell-content:not(.mat-calendar-body-selected) {
+    text-decoration: line-through;
+    color: $color-dove-gray;
+  }
+}

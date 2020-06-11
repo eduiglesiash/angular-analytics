@@ -1,0 +1,35 @@
+$color-vodafone-gray: #333;
+%base {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+a {
+  @extend %base;
+  &.vfes-button--secondary{
+    color: #ffffff;
+  }
+
+  @include linksPseudo {
+    @extend %base;
+  }
+
+
+  &:hover {
+    color: currentColor;
+    text-decoration: underline;
+    outline: none;
+    background: none;
+    border: none;
+  }
+
+  &.underlined {
+    text-decoration: underline;
+  }
+}
+.rectangle__content {
+  a{
+    text-decoration: underline;
+  }
+}

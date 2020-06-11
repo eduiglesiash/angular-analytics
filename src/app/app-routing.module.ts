@@ -3,12 +3,17 @@ import {Routes, RouterModule} from '@angular/router';
 import {MobileDetailComponent} from './views/mobile-detail/mobile-detail.component';
 import {MobileCatalogComponent} from './views/mobile-catalog/mobile-catalog.component';
 import {Page404Component} from './views/page404/page404.component';
+import {TestComponentsComponent} from './views/test-components/test-components.component';
 
 
 const routes: Routes = [
   {
     path: 'catalog',
     component: MobileCatalogComponent
+  },
+  {
+    path: 'test-components',
+    component: TestComponentsComponent
   },
   {
     path: 'mobile/:name/:id',

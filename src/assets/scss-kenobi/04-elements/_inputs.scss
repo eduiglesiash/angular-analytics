@@ -1,0 +1,80 @@
+.ficha, .phone-list {
+    input, select, textarea {
+        border-radius: rem( 3px);
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        box-shadow: 0 rem( 1px) rem( 2px) rgba(50,50,50,.75) inset;
+        border: rem( 1px) solid #e9e9e9;
+        font-size: 0.875rem;
+        padding: rem( 10px);
+        width: 100%;
+        border-radius: 0;
+        &:focus{
+            outline: 0;
+        }
+    }
+}
+
+.ftol-input-text {
+    height: rem( 44px);
+    box-shadow: inset rem( 2px) rem( 4px) rem( 6px) 0 rgba(235, 235, 235, 0.8);
+    background-color: $vf-white;
+    font-family: VodafoneRegular;
+    font-size: 1.125rem;
+    color: $vf-dark;
+    border-radius: rem( 3px);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: rem( 1px) solid #e9e9e9;
+    padding: rem( 10px);
+    width: 100%;
+    border-radius: 0;
+    &:focus{
+        outline: 0;
+    }
+
+
+    &::placeholder {
+        color: $vf-lightgray2;
+    }
+    &.ng-invalid {
+        &:not(.ng-untouched) {
+            box-shadow: 0px 0px 0px rem( 2px) $vf-lightgray4;
+            border-color: $vfes-color--vodafone-red;
+        }
+    }
+    &[disabled]{
+        opacity: 0.5;
+    }
+}
+
+.ftol-input-check {
+    box-sizing: border-box;
+    padding: 0;
+    width: rem( 20px);
+    height: rem( 20px);
+    display: inline-block;
+    margin-right: rem( 5px);
+    background: $vf-white;
+    box-shadow: inset 0 rem( 3px) rem( 6px) 0 rgba(0, 0, 0, 0.12);
+    border: solid rem( 1px) $vf-lightgray2;
+    border-radius: rem( 3px);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 0.875rem;
+    &:focus{
+        outline: 0;
+    }
+
+
+    &.ng-invalid {
+        &:not(.ng-untouched) {
+            border: solid rem( 1px) $vfes-color--vodafone-red;
+        }
+    }
+}
+
+

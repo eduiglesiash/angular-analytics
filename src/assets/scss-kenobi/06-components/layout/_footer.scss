@@ -1,0 +1,38 @@
+.MDD_autoncontent.MDDfooter {
+    padding-bottom: 110px;
+
+    .accordion__content ul {
+        margin-top: 2rem;
+    }
+
+    .accordion__content > ul > li {
+        margin: .5em 0!important;
+        line-height: 20.8px;
+    }
+
+    .copyright {
+        padding: 10px 0;
+        color: #fff;
+        text-align: center;
+    }
+
+    .legal ul > li {
+        display: inline-block;
+        margin: 0 10px 5px 0!important;
+        line-height: 23.4px;
+    }
+
+    footer .footer {
+        font-family: VodafoneLight;
+        font-size: 18px;
+        overflow: hidden;
+    }
+}
+.MDD_autoncontent.MDDfooter.ratefooter {
+    padding-bottom: 0;
+    .footer-desktop{
+        .vfc-layout__item.vfc-u-1\/4-lap-and-up.ext-links{
+            margin-bottom: 60px;
+        }
+    }
+}

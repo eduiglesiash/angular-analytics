@@ -1,0 +1,33 @@
+.phone-list {
+
+  &__description {
+    @include flexbox();
+    @include justify-content(space-around);
+
+   
+
+    .vfes-title--5 {
+      margin-bottom: rem( 20px);
+      width: 100%;
+      font-size: 1.35em;
+
+      @include mq-tablet {
+        margin-bottom: 1rem;
+        font-size: 1.35em;
+      }
+
+      @include mq-desktop {
+        margin-bottom: 1rem;
+        font-size: 1.3125em;
+      }
+
+      @media only screen and (min-width: $breakpoint-mov) {
+        width: 100%;
+        padding-right: rem( 16px);
+      }
+      @media screen and (min-width: 0\0) {
+        max-width: 80%;
+      }
+    }
+  }
+}

@@ -1,0 +1,170 @@
+@mixin gradient($direction: "bottom", $start: #fff, $end: #000)
+{
+    // En ie9 no tiene gradiente por lo que se pone el color de fondo
+    background-color: $start;
+    @if $direction == "top"
+    {
+        /* IE10+ */
+        background-image: -ms-linear-gradient(bottom, $start 0%, $end 100%);
+
+        /* Mozilla Firefox */
+        background-image: -moz-linear-gradient(bottom, $start 0%, $end 100%);
+
+        /* Opera */
+        background-image: -o-linear-gradient(bottom, $start 0%, $end 100%);
+
+        /* Webkit (Safari/Chrome 10) */
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, $start), color-stop(100, $end));
+
+        /* Webkit (Chrome 11+) */
+        background-image: -webkit-linear-gradient(bottom, $start 0%, $end 100%);
+
+        /* W3C Markup */
+        background-image: linear-gradient(to top, $start 0%, $end 100%);
+    }
+    @else if $direction == "right"
+    {
+        /* IE10+ */
+        background-image: -ms-linear-gradient(left, $start 0%, $end 100%);
+
+        /* Mozilla Firefox */
+        background-image: -moz-linear-gradient(left, $start 0%, $end 100%);
+
+        /* Opera */
+        background-image: -o-linear-gradient(left, $start 0%, $end 100%);
+
+        /* Webkit (Safari/Chrome 10) */
+        background-image: -webkit-gradient(linear, left top, right top, color-stop(0, $start), color-stop(100, $end));
+
+        /* Webkit (Chrome 11+) */
+        background-image: -webkit-linear-gradient(left, $start 0%, $end 100%);
+
+        /* W3C Markup */
+        background-image: linear-gradient(to right, $start 0%, $end 100%);
+    }
+    @else if $direction == "bottom"
+    {
+       /* IE10+ */
+        background-image: -ms-linear-gradient(top, $start 0%, $end 100%);
+
+        /* Mozilla Firefox */
+        background-image: -moz-linear-gradient(top, $start 0%, $end 100%);
+
+        /* Opera */
+        background-image: -o-linear-gradient(top, $start 0%, $end 100%);
+
+        /* Webkit (Safari/Chrome 10) */
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $start), color-stop(100, $end));
+
+        /* Webkit (Chrome 11+) */
+        background-image: -webkit-linear-gradient(top, $start 0%, $end 100%);
+
+        /* W3C Markup */
+        background-image: linear-gradient(to bottom, $start 0%, $end 100%);
+    }
+    @else if $direction == "left"
+    {
+        /* IE10+ */
+        background-image: -ms-linear-gradient(right, $start 0%, $end 100%);
+
+        /* Mozilla Firefox */
+        background-image: -moz-linear-gradient(right, $start 0%, $end 100%);
+
+        /* Opera */
+        background-image: -o-linear-gradient(right, $start 0%, $end 100%);
+
+        /* Webkit (Safari/Chrome 10) */
+        background-image: -webkit-gradient(linear, right top, left top, color-stop(0, $start), color-stop(100, $end));
+
+        /* Webkit (Chrome 11+) */
+        background-image: -webkit-linear-gradient(right, $start 0%, $end 100%);
+
+        /* W3C Markup */
+        background-image: linear-gradient(to left, $start 0%, $end 100%);
+    }
+    @else if $direction == "bottom_right"
+    {
+       /* IE10+ */
+        background-image: -ms-linear-gradient(top left, $start 0%, $end 100%);
+
+        /* Mozilla Firefox */
+        background-image: -moz-linear-gradient(top left,  $start 0%, $end 100%);
+
+        /* Opera */
+        background-image: -o-linear-gradient(top left,  $start 0%, $end 100%);
+
+        /* Webkit (Safari/Chrome 10) */
+        background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0,  $start), color-stop(100, $end));
+
+        /* Webkit (Chrome 11+) */
+        background-image: -webkit-linear-gradient(top left,  $start 0%, $end 100%);
+
+        /* W3C Markup */
+        background-image: linear-gradient(to bottom right,  $start 0%, $end 100%);
+    }
+
+    @else if $direction == "bottom_left"
+    {
+       /* IE10+ */
+        background-image: -ms-linear-gradient(top right, $start 0%, $end 100%);
+
+        /* Mozilla Firefox */
+        background-image: -moz-linear-gradient(top right, $start 0%, $end 100%);
+
+        /* Opera */
+        background-image: -o-linear-gradient(top right, $start 0%, $end 100%);
+
+        /* Webkit (Safari/Chrome 10) */
+        background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, $start), color-stop(100, $end));
+
+        /* Webkit (Chrome 11+) */
+        background-image: -webkit-linear-gradient(top right, $start 0%, $end 100%);
+
+        /* W3C Markup */
+        background-image: linear-gradient(to bottom left, $start 0%, $end 100%);
+    }
+
+    @else if $direction == "top_right"
+    {
+       /* IE10+ */
+        background-image: -ms-linear-gradient(bottom left, $start 0%, $end 100%);
+
+        /* Mozilla Firefox */
+        background-image: -moz-linear-gradient(bottom left, $start 0%, $end 100%);
+
+        /* Opera */
+        background-image: -o-linear-gradient(bottom left, $start 0%, $end 100%);
+
+        /* Webkit (Safari/Chrome 10) */
+        background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, $start), color-stop(100, $end));
+
+        /* Webkit (Chrome 11+) */
+        background-image: -webkit-linear-gradient(bottom left, $start 0%, $end 100%);
+
+        /* W3C Markup */
+        background-image: linear-gradient(to top right, $start 0%, $end 100%);
+    }
+
+    @else if $direction == "top_left"
+    {
+       /* IE10+ */
+        background-image: -ms-linear-gradient(bottom right, $start 0%, $end 100%);
+
+        /* Mozilla Firefox */
+        background-image: -moz-linear-gradient(bottom right, $start 0%, $end 100%);
+
+        /* Opera */
+        background-image: -o-linear-gradient(bottom right, $start 0%, $end 100%);
+
+        /* Webkit (Safari/Chrome 10) */
+        background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, $start), color-stop(100, $end));
+
+        /* Webkit (Chrome 11+) */
+        background-image: -webkit-linear-gradient(bottom right, $start 0%, $end 100%);
+
+        /* W3C Markup */
+        background-image: linear-gradient(to top left, $start 0%, $end 100%);
+    }
+
+
+}

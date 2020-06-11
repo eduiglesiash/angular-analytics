@@ -1,0 +1,142 @@
+destiny-navigation {
+  // Sobrecargar estilos cobertura cuando esta dentro del checkout
+  .no-cart-mobile {
+    height:  6.3rem;
+    background-color: #e60000;
+    margin-bottom: -130px;
+  }
+
+  ftol-new-coverage {
+    width: 100%;
+    .coverage {
+      &__box {
+        min-height: rem(250px) !important;
+
+        @include mq-tablet {
+          min-height: rem(150px) !important;
+        }
+      }
+    }
+
+    ftol-header {
+      display: none;
+    }
+
+  }
+
+  ftol-coverage-form2 {
+
+    .coverage {
+      &__container--header {
+         padding-top: 1px !important;
+      }
+
+      &__title {
+        @include mq-tablet {
+           max-width: 100% !important;
+        }
+      }
+      
+      &__container {
+        min-height: 0 !important;
+        @include mq-tablet {
+          width: 748px !important;  
+        }
+      }
+      
+      &__form {
+        &__container {
+          .adress-box--storedAddress {
+            padding: 1.2rem 1.5625rem !important;
+            re-captcha {
+               // display: none;
+              div {
+                margin-bottom: 0;
+              }  
+            }
+          }          
+        }
+
+        &__container__fix {
+          @include mq-tablet {
+            margin-bottom: 15px !important;
+          }
+        }
+
+        &__buttons {
+          margin-bottom: 32px !important; 
+
+          @include mq-tablet {
+            display: inline !important;
+            &[ng-reflect-ng-switch="STORED_ADDRESS"]{
+              .button-submit {
+                width: 48% !important;
+              }
+
+              .button-submit--red {
+                margin-left: 1rem;
+                float: right;
+              }
+            }
+          }
+          
+          @include mq-desktop {
+            margin-bottom: 0px !important;
+            .button-submit {
+              margin-left: 1rem;
+            }
+          }
+
+          &__container {
+            padding: 0 !important;
+          }          
+        }
+      }
+        
+      &__buttons-container {
+        @include mq-tablet {
+          padding: 0 !important;
+        }
+        @include mq-desktop {
+          padding: 0 !important;
+        }
+
+        ftol-walmeric-c2c-link {
+          margin-bottom: 15px !important;
+        }
+      }
+    }
+  }
+
+  ftol-coverage-result {
+    .coverage-result {
+     &__order {
+        padding: 15px !important;
+      }
+
+      &__body {
+        padding: 15px !important;
+        
+        .coverage-result__button {
+            display: flex;
+            justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+ftol-loading-coverage {
+  .modal-coverage-loading .overlay {
+    @include mq-tablet {
+      width: 100% !important;
+    }
+  }
+
+  .nsm-dialog {
+    @include mq-tablet {
+      min-height: 0 !important;
+      bottom: 0 !important;
+    }
+  }
+}

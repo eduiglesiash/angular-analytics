@@ -1,0 +1,19 @@
+.chew-check {
+  $size: 1.25rem;
+  width: $size;
+  height: $size;
+  border: solid 0.0625rem gray;
+  display: inline-block;
+
+  svg {
+    width: $size;
+    height: $size;
+    opacity: 0;
+  }
+
+  &--active {
+    svg {
+      opacity: 1;
+    }
+  }
+}

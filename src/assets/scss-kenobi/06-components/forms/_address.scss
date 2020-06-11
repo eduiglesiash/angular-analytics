@@ -1,0 +1,41 @@
+ftol-address {
+  @include flexbox();
+  @include flex-direction(column);
+  @include flex(1);
+
+  .nsm-dialog & {
+    margin: 0 1rem 1rem;
+  }
+
+  .wrapper-address {
+    margin: 0 1rem 1rem 1rem;
+
+    @include mq-tablet {
+      overflow-y: auto;
+      height: 29rem;
+      min-height: 29rem;
+    }
+
+    @include mq-desktop {
+      min-height: 38rem;
+    }
+
+    &__title {
+      text-align: center;
+      font-family: 'VodafoneRegular';
+      font-size: rem(24px);
+      line-height: rem(15px);
+      margin: 0 0 rem(20px) 0;
+      font-weight: normal;
+
+      @include mq-tablet {
+        font-size: rem(26px);
+      }
+
+      @include mq-desktop {
+        font-size: rem(26px);
+      }
+    }
+
+  }
+}

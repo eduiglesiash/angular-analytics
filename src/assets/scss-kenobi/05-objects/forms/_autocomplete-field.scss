@@ -1,0 +1,110 @@
+destiny-autocomplete,
+ftol-address-autocomplete {
+  .mat-form-field-flex {
+    padding: 0 !important;
+  }
+
+  .text-input-element {
+    text-indent: rem(12px);
+    padding-right: rem(35px);
+  }
+
+  .mat-form-field-label-wrapper {
+    margin-left: rem(12px);
+  }
+
+  @include mq-ie {
+    .mat-icon[svgicon='v3:icon3-tick-or-solved']>svg {
+      margin-top: 0.7rem;
+    }
+  }
+}
+
+.mat-option {
+  min-height: rem(57px) !important;
+  height: auto !important;
+}
+
+.mat-option-text {
+  text-overflow: unset;
+  white-space: normal;
+  .ctaTest & {
+    text-align: center;
+  }
+}
+
+.cdk-overlay-pane {
+  padding: rem(15px) 0 rem(25px);
+  .ctaTest & {
+    padding: 0;
+  }
+  .mat-select-panel{
+    margin-top: rem(16px);
+    margin-bottom: rem(16px);
+    .ctaTest & {
+      margin-top: 0;
+    }
+
+  }
+}
+
+.mat-autocomplete-panel {
+  @extend %custom-scroll-bar;
+  position: absolute !important;
+
+  &.mat-autocomplete-visible {
+    border-radius: rem(6px);
+    box-shadow:
+      0 rem(8px) rem(8px) 0 rgba(0, 0, 0, 0.25),
+      0 0 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: map-get($colors, light-gray);
+    min-height: 100%;
+  }
+
+  .mat-option {
+    border-bottom: solid 1px map-get($colors, light-gray-2);
+
+    &-text {
+      color: map-get($colors, dark-black);
+      font-size: rem(16px);
+      line-height: rem(20px);
+    }
+
+    &.mat-active {
+      background: transparent;
+      border-bottom: solid rem(1px) map-get($colors, light-gray-3);
+    }
+
+    &.mat-selected {
+      &:not(.mat-active) {
+        &:not(:hover) {
+          background: transparent !important;
+        }
+      }
+    }
+  }
+}
+
+// FIXME: porque Material no calcula bien la posición absoluta en recogida en tienda
+.fix-autocomplete.mat-autocomplete-panel {
+  left: -9px;
+  width: calc(100% + 9px);
+}
+
+.error {
+  .mat-form-field-outline {
+    &>div {
+      border-color: #ff0000;
+    }
+  }
+
+  .mat-form-field-wrapper {
+    .mat-form-field-label {
+      color: #ff0000;
+    }
+  }
+
+  .mat-checkbox-frame {
+    border-color: #ff0000;
+  }
+}

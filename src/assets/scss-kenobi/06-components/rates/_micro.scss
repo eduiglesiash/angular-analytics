@@ -1,0 +1,446 @@
+@import '01-settings/index';
+@import '02-tools/index';
+
+// CSS del microsite
+.cintillo {
+    .vfes-card-box-new {
+        padding-top: rem(10px);
+    }
+}
+.vfes-ms-content {
+
+    &[data-iva="false"] .iva {
+        display: none;
+    }
+
+    &[data-iva="true"] .noIva {
+        display: none;
+    }
+
+    .vfes-link--no-chevron {
+        text-decoration: underline;
+    }
+
+    .vfes-hero-image .vfes-title {
+        margin-bottom: 0;
+        max-width: 100%;
+    }
+
+    .vfes-tabs {
+        position: relative;
+        padding: 0;
+        background-color: #ebebeb;
+        @include mq-tablet {
+            padding: 0;
+            background-color: #ffffff;
+        }
+        @include mq-desktop {
+            padding: 0;
+            background-color: #ffffff;
+        }
+        &__container {
+            margin-top: 0;
+            display: none;
+            padding: rem( 13px) 0;
+            margin-bottom: rem( 4px);
+            @include mq-tablet {
+                @include flexbox();
+                @include justify-content(center);
+                margin-bottom: 0;
+                padding: rem( 10px) 0;
+
+            }
+            @include mq-desktop {
+                @include flexbox();
+                @include justify-content(center);
+                padding: rem( 10px) 0;
+                margin-bottom: 0;
+                border-bottom: solid rem( 1px) map-get($colors, light-gray-3);
+
+            }
+        }
+
+        &__content {
+            text-align: left;
+            display: block;
+            padding-top: 0 !important;
+            padding-bottom: 0;
+            border: none;
+            background-color: #ebebeb;
+            @include mq-tablet {
+                text-align: left;
+                padding: 0 rem( 8px) rem( 24px);
+
+            }
+            @include mq-desktop {
+                text-align: left;
+                padding: 0 0 rem( 24px);
+
+            }
+            .vfes-layout{
+                &__wrapper{
+                    text-align: center;
+                }
+            }
+            &:first-of-type .vfes-layout {
+                padding-bottom: 0;
+                padding: 0 0 rem( 24px);
+            }
+            &:last-of-type .vfes-layout {
+                padding-top: 0;
+            }
+            &__rates{
+                padding: 0;
+                @include mq-desktop {
+                    padding: 0;
+                }
+                .vfes-layout__item[class*="vfes-1/1-mov"] {
+                    padding: 0;
+                    margin: 0 rem( 10px);
+                    @include mq-tablet {
+                        &:nth-child(odd){
+                            margin-left: 0;
+                        }
+                        &:nth-child(even){
+                            margin-right: 0;
+                        }
+                    }
+                    @include mq-desktop {
+                        &:nth-child(1){
+                            margin-left: 0;
+                        }
+                        &:nth-child(3n){
+                            margin-right: 0;
+                        }
+                    }
+                }
+                &--one{
+                    @include mq-tablet {
+                        padding: 0 ;
+
+                    }
+                    @include mq-desktop {
+                        padding: 0 rem( 10px);
+
+                    }
+                }
+            }
+            &__corverage-link{
+                .vfes-button--secondary{
+                    font-size: rem( 18px);
+                    line-height: rem( 24px);
+                    margin: 0 auto rem( 22px);
+                    width: auto;
+                    padding: rem( 10px) rem( 20px);
+                    @include mq-tablet {
+                        margin: 0 auto;
+
+                    }
+                    @include mq-desktop {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+        &__tab {
+            padding: 0;
+            width: auto;
+            max-width: auto;
+            &:first-child{
+                margin-right: rem(3px);
+                .vfes-tabs__tab-button{
+                    border-radius: rem( 7px) 0 0 rem( 7px);
+
+                }
+            }
+            &:last-child{
+                .vfes-tabs__tab-button{
+                    border-radius: 0 rem( 7px) rem( 7px) 0 !important;                    border-radius: 10px 0px 0px 10px;
+
+                }
+            }
+            @include mq-tablet {
+                width: rem(162px);
+                max-width: 100%;
+            }
+            @include mq-desktop {
+                width: auto;
+                max-width: 100%;
+            }
+            button{
+                min-width: rem( 150px);
+                width: 100%;
+                &::after, &::before{
+                    display: none;
+                }
+            }
+            .vfes-tabs__tab-button{
+                background-color: map-get($colors, light-gray-2);
+                color: map-get($colors, dark-black);
+                padding: rem( 12px) 0;
+
+            }
+            .vfes-tabs__tab-button.vfes-tabs__tab-active{
+                background-color: map-get($colors, dark-red);
+                color: map-get($colors, white-pure);
+            }
+        }
+    }
+
+    .vfes-card-shop:not(.vfes-sticky__item--added) {
+        margin-bottom: rem( 10px);
+    }
+    .vfes-card-shop {
+        margin-top: 0;
+        box-shadow: 0 rem( 2px) rem( 8px) 0 rgba(0, 0, 0, 0.16);
+        @include mq-tablet {
+            min-width: 100%;
+        }
+        @include mq-desktop {
+            min-width: 100%;
+        }
+        .vfes-link{
+            text-decoration: underline;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .vfes-tag-label {
+
+        &__outstanding {
+            font-family: 'VodafoneRgBold';
+            z-index: 8;
+            border-top-left-radius: rem( 6px);
+            border-top-right-radius: rem( 6px);
+            border-bottom-right-radius: rem( 6px);
+            position: relative;
+            display: table;
+            width: auto;
+            top: rem( 9px);
+            margin-top: -.5625rem;
+            @include gradient(bottom, #666666, #333333);
+            @include mq-tablet{
+                display: block;
+                margin-top: 0;
+                position: absolute;
+                top: -1.5rem;
+            }
+
+            @include mq-desktop{
+                display: block;
+                margin-top: 0;
+                position: absolute;
+                top: -1.5rem;
+            }
+
+        }
+        &::after{
+            top: rem( 41px);
+            @include mq-tablet{
+                position: absolute;
+                top: .5rem;
+            }
+
+            @include mq-desktop{
+                position: absolute;
+                top: .5rem;
+            }
+        }
+    }
+
+    .vfes-button--secondary {
+        margin-top: rem( 32px);
+    }
+
+    .vfes-carousel {
+        margin-bottom: rem( 40px);
+    }
+
+    .iva {
+        &__container {
+            position: absolute;
+            bottom: calc(100% - 32px);
+            left: 0;
+            width: 100%;
+            @include mq-tablet {
+                bottom: calc(100% - 110px);
+            }
+            @include mq-desktop {
+                bottom: calc(100% - 90px);
+            }
+        }
+
+        &__wrapper {
+            text-align: center;
+            letter-spacing: normal;
+            @include mq-tablet {
+                padding: 0 rem( 20px);
+                text-align: right;
+            }
+            @include mq-desktop {
+                margin: 0 auto;
+                max-width: 1280px;
+                padding: 0 rem( 20px);
+                text-align: right;
+            }
+        }
+
+        &__box {
+            display: inline-block;
+            vertical-align: top;
+
+            &:first-child {
+                margin-right: rem( 20px);
+            }
+        }
+
+        &__button {
+            position: relative;
+            font-size: rem( 16px);
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: rem( 20px);
+                height: rem( 20px);
+                border: rem( 1px) solid #999;
+                background-color: map-get($colors, white-pure);
+                border-radius: 100%;
+                margin-right: rem( 5px);
+            }
+
+            &.active::before {
+                box-shadow: 0 0 0 rem( 1px) map-get($colors, dark-cyan);
+                border: rem( 3px) solid map-get($colors, white-pure);
+                background-color: map-get($colors, dark-cyan);
+                width: rem( 16px);
+                height: rem( 16px);
+            }
+        }
+    }
+
+
+
+    .mb0 {
+        margin-bottom: rem( 10px);
+        @include mq-tablet {
+            margin-bottom: 0;
+        }
+        @include mq-desktop {
+            margin-bottom: 0;
+        }
+    }
+
+    .vfes-title + .vfes-button {
+        margin-top: rem( 19px);
+    }
+
+    .vfes-card {
+        img {
+            margin-bottom: 0;
+        }
+
+        &__price {
+            margin-top: rem( 12px);
+        }
+    }
+
+    /* Popup */
+    .vfms-rate-uses-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        @include flex-wrap(wrap);
+        &__item {
+            display: inline-block;
+            margin: 0 rem( 30px) rem( 10px) 0;
+            &-text{
+                display: inline-block;
+            }
+
+            &--icon-valid {
+                &:before {
+                    content: "";
+                    background: url('/c/tienda/tol/static/img/modules/icons/svg/check-icon.svg') no-repeat center center;
+                    display: inline-block;
+                    height: rem( 15px);
+                    margin-right: rem( 5px);
+                    vertical-align: middle;
+                    width: rem( 20px);
+                }
+            }
+
+            &--icon-invalid {
+                &:before {
+                    content: "";
+                    background: url('/c/tienda/tol/static/img/modules/icons/svg/check-cross-icon.svg') no-repeat center center;
+                    display: inline-block;
+                    height: rem( 15px);
+                    margin-right: rem( 5px);
+                    vertical-align: middle;
+                    width: rem( 20px);
+                }
+
+            }
+        }
+    }
+    .modal-info{
+        margin-bottom: rem( 50px);
+    }
+
+    .mt-tablet {
+        @include mq-tablet {
+            margin-top: rem( 41px);
+        }
+    }
+
+    .vfes-tabs__content-open[data-tab="1"] ~ .iva__container .iva__wrapper {
+        @include mq-desktop {
+            max-width: 51.25rem;
+        }
+    }
+    .why__background .vfes-layout__item[class*="1/4"] {
+        @include mq-desktop {
+            margin-bottom: 0;
+        }
+    }
+
+
+
+
+// Section FAQS
+
+.vfms-faq {
+    &__button {
+        &--content {
+            padding-top: rem( 20px);
+        }
+    }
+}
+
+
+// Section lines
+
+.vfms-button__terciary {
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    text-align: center;
+
+    & a {
+        margin-bottom: rem( 32px);
+        min-width: rem( 300px);
+
+    }
+}
+.vfes-layout__item[class*="vfes-1/1-mov"] {
+    padding: 0 rem( 10px);
+}
+
+}

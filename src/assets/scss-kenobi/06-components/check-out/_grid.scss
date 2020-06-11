@@ -1,0 +1,8 @@
+.check-out{
+    &__wrapper{
+        padding: 0;
+        @include mq-desktop{
+            padding: 0 rem(36px ) rem(36px );
+        }
+    }
+}

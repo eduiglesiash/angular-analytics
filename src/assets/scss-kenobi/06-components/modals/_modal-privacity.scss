@@ -1,0 +1,71 @@
+.ftol-modal {
+  &-privacity {
+    .overlay.nsm-overlay-open {
+      overflow: auto;
+    }
+
+    .custom-modal {
+      max-width: 90% !important;
+      @include mq-tablet {
+        max-width: 95% !important;
+      }
+      @include mq-desktop {
+        max-width: 95% !important;
+      }
+    }
+
+    .nsm-content {
+      margin: 1rem auto !important;
+      @include mq-tablet {
+        width: 100%;
+        margin: 135px auto !important;
+        padding: rem( 8px);
+      }
+      @include mq-desktop {
+        width: 100%;
+        margin: 135px auto !important;
+        padding: rem( 8px);
+      }
+    }
+  }
+}
+
+.Privacy-Policy {
+  width: 100%;
+  padding: 0px rem( 40px) rem( 40px) rem( 40px);
+
+  @include mq-tablet {
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+
+  .vfes-title--1 {
+    font-family: VodafoneRegular, Arial, sans-serif !important;
+    border-bottom: rem( 1px) solid #ccc;
+    line-height: 1.1;
+    margin: 0rem 0 .6em 0;
+    padding-bottom: .6em;
+    text-align: left;
+    font-size: 1.5625rem !important;
+    font-weight: 100;
+    color: #e60000;
+
+    @include mq-desktop {
+      margin: -1rem 0 .6em 0;
+    }
+
+    @include mq-tablet {
+      margin: -1rem 0 .6em 0;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .vfes-color--black {
+    text-decoration: underline;
+  }
+
+}

@@ -1,0 +1,13 @@
+///*----------------------------------------------------------------
+//    #PIXEL TO REM
+//------------------------------------------------------------------*/
+
+// REVISAR POR CASTRI PORQUE NO PASA A REMS
+@function rem($pixels) {
+  @if $pixels != 0 {
+    $remSize: $pixels/ 16px;
+    @return #{$remSize}rem;
+  }@else{
+    @return '1rem';
+  }
+}

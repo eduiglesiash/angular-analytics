@@ -1,0 +1,36 @@
+.check-out{
+    &__content{
+        padding: rem(16px ) rem(16px ) rem(24px );
+        @include mq-desktop{
+            padding: 0 rem(7px );
+        };
+    }
+    &__title {
+        font-size: rem(20px );
+        line-height: rem(30px );
+        font-weight: normal;
+        color:map-get( $colors, dark-black );
+        margin-top: 0;
+        font-family: 'VodafoneRegular';
+        @include mq-tablet {
+          font-size: 1.625rem;
+          margin: rem(10px ) 0 rem(24px );
+        }
+        @include mq-desktop {
+            font-family: 'VodafoneLight';
+            font-size: rem(26px );
+            margin: rem( 12px ) 0 rem( 24px ) 0;
+        }
+    }
+    &__fields{
+        border-radius: rem(10px );
+        padding: rem(16px );
+        box-shadow: 0 rem(5px ) rem(10px ) 0 rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        @include flexbox();
+        @include flex-direction(row);
+        @include flex-wrap(wrap);
+        @include justify-content(space-between);
+        padding: rem(16px ) rem(22px );
+    }
+}

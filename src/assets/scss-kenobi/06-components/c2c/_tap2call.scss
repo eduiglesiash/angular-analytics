@@ -1,0 +1,94 @@
+.tapCall {
+  font-family: 'VodafoneRegular';
+  font-size: 1.125rem;
+  line-height: 1.33;
+  text-align: center;
+  color: $vf-white;
+  border: solid rem( 1px) $vf-white;
+  border-radius: .375rem;
+  max-height: rem(48px);
+  @include flexbox();
+  @include justify-content(center);
+  @include align-items(center);
+  a {
+    padding: 0.71rem 1rem;
+    width: 100%;
+    &:hover,
+    &:active,
+    &:visited {
+      outline: none;
+      background: none;
+      text-decoration: none;
+      border: none;
+    }
+    &:focus {
+      border-bottom: rem(2px) solid #e60000;
+      .mouse-active & {
+        border-bottom: rem(1px) solid inset;
+      }
+    }
+  }
+}
+
+.phone-number {
+  font-weight: normal;
+  font-family: 'VodafoneRegular';
+}
+
+.out-time {
+  width: 100%;
+  font-size: 1.25rem;
+  border: none;
+  text-align: center;
+
+  @include mq-tablet {
+    text-align: left;
+  }
+
+  @include mq-desktop {
+    text-align: left;
+  }
+
+}
+
+// modificadores de contexto
+.custom-modal--full {
+  .out-time {
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
+  .tapCall {
+    margin-top: 1.5rem;
+    padding: rem( 14px) rem( 10px);
+
+    .phone-number {
+      font-family: 'VodafoneRgBold';
+      font-weight: 400;
+    }
+  }
+}
+
+.custom-modal--dark {
+  .tapCall {
+    border: none;
+  }
+}
+
+ftol-buttons-c2c {
+  .tapCall {
+    color: $vf-dark !important;
+    border: solid rem( 1px) $vf-dark;
+    padding: .71rem 1rem;
+    max-height: rem( 48px);
+    &:hover, &:focus {
+      background: none;
+      outline: none;
+    }
+
+    a {
+      color: $vf-dark !important;
+    }
+  }
+}

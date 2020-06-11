@@ -1,0 +1,46 @@
+.swiper {
+    &-pagination {
+      position: static;
+    }
+  }
+
+  .swiper-container {
+    margin: 0 1.5rem;
+    @include mq-tablet {
+      margin: auto;
+    }
+    @include mq-desktop {
+      margin: auto;
+    }
+  }
+
+
+  .swiper-slide {
+    text-align: center;
+    @media screen and (min-width: 0\0) {
+      .swiper-lazy-preloader{
+        opacity: 0;
+      }
+    }
+  }
+  .swiper-slide-active {
+    text-align: center;
+    @media screen and (min-width: 0\0) {
+      .swiper-lazy-preloader{
+        opacity: 1;
+      }
+    }
+  }
+
+  .swiper-lazy-preloader {
+    margin: auto;
+  }
+
+  .swiper-pagination {
+    margin: 1rem 0;
+  }
+
+  .swiper-pagination-bullet-active {
+    border: 1px solid #373737;
+    background: #fff;
+  }

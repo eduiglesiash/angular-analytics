@@ -1,0 +1,18 @@
+.tgtDiv {
+    @include flexbox();
+    @include align-items(center);
+    margin-top: rem( 10px);
+
+    .separator {
+      margin-right: 1rem;
+    }
+
+    &__call-me {
+      width: rem( 188px);
+      margin-right: 1rem;
+      padding: .71rem 1rem;
+      &:focus {
+        outline: none;
+      }
+    }
+  }

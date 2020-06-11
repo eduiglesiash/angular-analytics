@@ -1,0 +1,35 @@
+.text-input-element {
+    width: 95%;
+    border: none;
+    background: none;
+    padding: 0;
+    padding-right: rem(15px);
+    text-overflow: ellipsis;
+    outline: none;
+    font: inherit;
+    position: relative;
+    bottom: rem( 3px);
+    appearance: none;
+    -webkit-appearance: none;
+    &::-webkit-inner-spin-button,
+    &::-webkit-calendar-picker-indicator,
+    &::-webkit-clear-button {
+      display: none;
+      -webkit-appearance: none;
+    }
+}
+
+.mat-form-field-type-mat-native-select {
+  &.mat-form-field-disabled {
+     .mat-form-field-infix {
+        &::after {
+          color: map-get($colors, gray-pure) !important;
+        }
+      }
+     .mat-input-element {
+        &:disabled {
+          color: map-get($colors, gray-pure) !important;
+        }
+      }
+  }
+}

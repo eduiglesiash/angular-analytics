@@ -1,0 +1,283 @@
+.phone-detail {
+  @include flexbox();
+  @include flex-dir(column);
+  @include align-items(center);
+  min-height: 100vh;
+  min-width: rem( 320px);
+  padding: 0 rem( 11px) 0 rem( 9px);
+
+  @include mq-tablet {
+    padding: 0 0 rem( 9px);
+  }
+
+  .line-3 {
+    @include mq-tablet {
+      width: 95%;
+      margin: rem( 15px) auto;
+    }
+  }
+
+  &__product-info {
+    margin-bottom: rem( 30px);
+    width: 100%;
+    padding: 0 rem( 10px);
+
+    @include mq-tablet {
+      padding: 0 rem( 30px);
+    }
+
+    @include mq-desktop {
+      padding: 0;
+      max-width: 61.4375rem;
+    }
+
+    .vfes-title--3 {
+      margin-bottom: rem( 40px);
+    }
+  }
+
+  &__main {
+    @include flexbox();
+    @include flex-dir(column);
+    @include align-items(flex-end);
+    width: 100%;
+    margin-bottom: rem( 30px);
+
+    @include mq-tablet() {
+      @include flex-dir(row);
+      padding: 0;
+      max-width: 38.75rem;
+
+    }
+
+    @include mq-desktop() {
+      max-width: 61.4375rem;
+      padding: 0;
+    }
+
+    &-info {
+      @include flexbox();
+      @include flex-dir(column);
+      @include align-items(center);
+      width: 100%;
+
+      @include mq-tablet {
+        @include align-items(flex-start);
+        width: 67%;
+      }
+
+      @include mq-desktop {
+        margin-right: rem( 20px);
+        width: 45%;
+      }
+
+      h1 {
+        @include mq-tablet {
+          text-align: left;
+        }
+      }
+
+    }
+
+    ftol-breadcrumbs {
+      @include align-self(flex-start);
+    }
+
+    &>section,
+    h1 {
+      @include mq-tablet {
+        @include align-self(flex-start);
+      }
+
+      @include mq-desktop {
+        width: 77%;
+      }
+    }
+
+    .c2cHead {
+      align-self: flex-end;
+
+      @include mq-desktop {
+        width: 30%;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 1.875rem;
+
+    @include mq-tablet {
+      font-size: 2.75rem;
+    }
+
+    @include mq-desktop {
+      white-space: nowrap;
+    }
+  }
+
+  &__img {
+    width: 60%;
+    margin: rem( 10px) auto;
+
+    @include mq-tablet {
+      width: 30%;
+      margin: 0 rem( 10px);
+    }
+
+    @include mq-desktop {
+      width: 20%;
+      margin: 0;
+      margin-right: rem( 50px);
+    }
+
+    .carousel {
+      &__page {
+        width: rem( 8px);
+        height: rem( 8px);
+        border-radius: 50%;
+        border: none;
+        background-color: #afafaf;
+
+        &--active {
+          background-color: #fff;
+          border: 2px solid #373737;
+          width: rem( 10px);
+          height: rem( 10px);
+          transform: translateY(1px);
+        }
+      }
+    }
+  }
+
+  &__stock {
+    margin: rem( 22px) 0 rem( 12px);
+
+    p {
+      margin: 0;
+
+      svg {
+        display: inline-block;
+        width: rem( 30px);
+        height: rem( 30px);
+        stroke-width: rem( 5px);
+        margin-bottom: -3px;
+        margin-right: rem( 12px);
+      }
+    }
+  }
+
+  &__options {
+    @include flexbox();
+    @include justify-content(space-around);
+    margin: rem( 24px) 0;
+    width: 100%;
+
+    @include mq-tablet() {
+      @include justify-content(flex-start);
+
+      ftol-selector[type="color"] {
+        margin-right: rem( 38px);
+      }
+    }
+  }
+
+  &__price {
+    width: 100%;
+  }
+
+  &__promotions {
+    width: 100%;
+    margin-top: rem( 12px);
+
+    @include mq-tablet() {
+      margin-top: rem( 32px);
+    }
+
+    .vfes-title--3 {
+      line-height: rem( 30px);
+      font-size: 1.185rem;
+      //font-size: 1.625rem;
+      width: 100%;
+
+      @include mq-tablet() {
+        display: block !important;
+        font-size: 1.875rem;
+        margin-bottom: rem( 20px);
+      }
+
+      @include mq-desktop() {
+        display: block !important;
+        font-size: 1.875rem;
+        margin-bottom: rem( 20px);
+      }
+    }
+
+    @include mq-tablet() {
+      @include flexbox();
+      @include flex-flow(column);
+      @include justify-content(center);
+      @include align-items(center);
+    }
+  }
+
+  &__rate-detail {
+    width: 100%;
+    margin-top: rem( 12px);
+
+    @include mq-tablet() {
+      margin-top: 0px;
+    }
+  }
+
+  &__description {
+    width: 100%;
+
+    @include mq-tablet() {
+      max-width: 38.75rem;
+      margin: 0 auto;
+    }
+
+    @include mq-desktop() {
+      width: 50%;
+      float: left;
+      padding-right: rem( 20px);
+    }
+
+    .vfes-title--3 {
+      line-height: rem( 30px);
+    }
+  }
+
+  &__especification {
+    width: 100%;
+
+    @include mq-tablet() {
+      max-width: 38.75rem;
+      margin: 0 auto;
+    }
+
+    @include mq-desktop() {
+      width: 50%;
+      float: left;
+      padding-left: rem( 20px);
+    }
+  }
+
+  &__banners {
+    @include flexbox();
+    @include flex-flow(column wrap);
+    @include align-items(center);
+    padding: rem( 10px);
+    width: 100%;
+
+    @include mq-tablet() {
+      @include flex-flow(row nowrap);
+    }
+
+    @include mq-desktop() {
+      max-width: 1025px;
+    }
+
+  }
+}

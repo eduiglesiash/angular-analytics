@@ -1,0 +1,253 @@
+// TODO - Estilos provisionales hasta eliminación de componente ftol-radio
+.delivery-shop {
+  mat-radio-group {
+    .mat-ripple.mat-radio-ripple {
+      display: none;
+    }
+
+    padding: 7px;
+    border-top: 0;
+    border: 1px solid #9999;
+    border-radius: 7px;
+    padding-right: 0px;
+    display: block;
+
+    .form-upfront-payment & {
+      border: none;
+    }
+
+    display: flex;
+    flex-direction: column;
+    max-height: rem(150px);
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .mat-form-field-wrapper {
+      padding-bottom: 0 !important;
+    }
+
+    .mat-form-field-infix {
+      padding: 0 !important;
+      border-top: 0;
+    }
+
+    .mat-form-field-underline {
+      display: none;
+    }
+
+    .mat-radio-button {
+
+      // max-width: min-content;
+      .mat-radio-outer-circle {
+        border-width: rem(1px) !important;
+      }
+
+      &.mat-accent {
+        &.mat-radio-checked {
+          .mat-radio-outer-circle {
+            border-color: map-get($colors, dark-cyan);
+          }
+
+          .mat-radio-label-content {
+            font-weight: bold;
+          }
+        }
+      }
+
+      .mat-radio-inner-circle {
+        background: map-get($colors, dark-cyan) !important;
+      }
+    }
+
+    .mat-radio-label {
+      white-space: normal;
+      // width: 100vw;
+    }
+
+    .mat-radio-label-content {
+      font-family: 'VodafoneRegular';
+      font-weight: normal;
+      white-space: normal;
+      // width: 83%;
+      font-size: rem(16px);
+      line-height: rem(20px);
+      padding: rem(5px) rem(5px) rem(5px) rem(8px);
+
+      // @include mq-tablet {
+      //     width: 40%;
+      // }
+      // @include mq-desktop {
+      //     width: 32%;
+      // }
+      .form-upfront-payment & {
+        padding: rem(8px) rem(16px);
+      }
+    }
+
+  }
+}
+
+
+.lines__fields__check {
+  .mat-radio-label {
+    // width: 250px;
+  }
+}
+
+// TODO - Estilos provisionales hasta eliminación de componente ftol-radio
+ftol-radio,
+.lines__fields__check {
+
+  .mat-form-field-wrapper {
+    padding-bottom: 0 !important;
+  }
+
+  .mat-form-field-infix {
+    padding: 0 !important;
+    border-top: 0;
+  }
+
+  .mat-form-field-underline {
+    display: none;
+  }
+
+  .mat-radio-button {
+    max-width: 100%;
+
+    .mat-radio-outer-circle {
+      border-width: rem(1px) !important;
+    }
+
+    &.mat-accent {
+      &.mat-radio-checked {
+        .mat-radio-outer-circle {
+          border-color: map-get($colors, dark-cyan);
+        }
+
+        .mat-radio-label-content {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .mat-radio-inner-circle {
+      background: map-get($colors, dark-cyan) !important;
+    }
+  }
+
+  .mat-radio-label {
+    white-space: normal;
+    width: 100%;
+  }
+
+  .mat-radio-label-content {
+    font-family: 'VodafoneRegular';
+    font-weight: normal;
+    white-space: normal;
+    width: 83%;
+    font-size: rem(16px);
+    line-height: rem(20px);
+    padding: rem(5px) rem(5px) rem(5px) rem(8px);
+
+    @include mq-tablet {
+      width: 40%;
+    }
+
+    @include mq-desktop {
+      width: 32%;
+    }
+
+    .form-upfront-payment & {
+      padding: rem(8px) rem(16px);
+    }
+
+    .wrapper-address & {
+      width: 100%;
+
+      @include mq-tablet {
+        width: 100%;
+      }
+
+      @include mq-desktop {
+        width: 100%;
+      }
+    }
+  }
+
+}
+
+.lines__fields__check {
+  .mat-radio-label {
+    width: 250px;
+  }
+}
+
+.rate-type-radio.mat-radio-button {
+  border-radius: 5px;
+  border: 2px solid #999;
+
+  &.mat-accent {
+    &.mat-radio-checked {
+      border-color: map-get($colors, dark-red);
+    }
+  }
+
+  .mat-radio-label {
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+
+    .mat-radio-container {
+      opacity: 0;
+      position: fixed;
+      width: 0;
+    }
+
+    .mat-radio-label-content {
+      padding-left: 0;
+    }
+
+  }
+
+}
+
+.deco-radio.mat-radio-button {
+  border-radius: 5px;
+  border: 1px solid #999;
+
+  &.mat-accent {
+    &.mat-radio-checked {
+      border: 2px solid #007c92;
+      .mat-radio-label-content {
+        .deco-radio__title {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .mat-radio-label {
+    display: block;
+    background-color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+
+    .mat-radio-container {
+      opacity: 0;
+      position: fixed;
+      width: 0;
+    }
+
+    .mat-radio-label-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0;
+    }
+
+  }
+
+}

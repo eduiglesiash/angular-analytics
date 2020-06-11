@@ -1,0 +1,120 @@
+.chews {
+  display: block;
+  min-height: rem( 30px);
+
+  @include mq-desktop {
+    width: 100%;
+    margin: auto;
+  }
+
+  &__button {
+    position: relative;
+    top: 0;
+    z-index: 6;
+    width: 100%;
+    padding: 0rem 0.75rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items(center);
+    color: $vf-dark;
+    background: transparent;
+    border: none;
+    margin-bottom: 0;
+
+    svg, mat-icon {
+      height: rem( 25px);
+      width: rem( 25px);
+      margin-left: .5rem;
+      color: $vfes-color--vodafone-gray;
+
+      @media only screen and (max-width: 320px) {
+        margin-left: 0;
+      }
+    }
+  }
+
+
+  &__terminal {
+    display: none;
+    width: auto;
+    z-index: 5;
+
+    .list {
+      color: $vfes-color--vodafone-gray;
+      font-size: 0.875rem;
+      max-height: rem( 243px);
+      overflow: hidden;
+      transition: max-height 0.7s ease-in-out;
+      margin-bottom: 0;
+      padding: rem( 14px) rem( 7px) rem( 14px);
+
+      &--expand {
+        max-height: 2000px;
+      }
+    }
+
+    li {
+      cursor: pointer;
+      @include flexbox();
+      @include align-items(center);
+      margin-bottom: rem( 20px);
+      max-width: rem( 30px);
+
+      &.disabled {
+        pointer-events: none;
+        opacity: 0.6;
+      }
+    }
+
+    .link-view-more {
+      font-family: 'VodafoneRegular';
+      font-size: 1.125rem;
+      color: $vfes-color--vodafone-gray;
+      text-decoration: underline;
+      padding: rem( 8px) rem( 16px);
+    }
+
+  }
+}
+
+.chewCheck {
+  position: relative;
+  width: rem( 20px);
+  height: rem( 20px);
+  border: solid rem( 1px) gray;
+  margin-right: rem( 12px);
+  margin-bottom: -1px;
+  display: inline-block;
+
+  span {
+    position: relative;
+    white-space: nowrap;
+    margin-left: 1.8rem;
+  }
+
+  svg, mat-icon {
+    width: 100%;
+    height: rem( 23px);
+    width: rem( 22px);
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: rem( 12px);
+    opacity: 0;
+  }
+  mat-icon {
+    svg{
+      stroke-width: rem( 12px);
+    }
+  }
+
+  &--active {
+    svg, mat-icon {
+      opacity: 1;
+    }
+  }
+}

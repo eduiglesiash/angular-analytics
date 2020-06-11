@@ -1,0 +1,22 @@
+@import './scaffolding';
+@import './pre-framework';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'VodafoneRegular';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+mat-icon svg {
+  stroke: none;
+}

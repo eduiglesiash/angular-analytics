@@ -1,0 +1,9 @@
+@mixin linksPseudo {
+
+  &:hover,
+  &:link,
+  &:active,
+  &:visited {
+    @content;
+  }
+}

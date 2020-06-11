@@ -1,0 +1,40 @@
+// reset
+// TODO: esto ahora esta en la ultima version del framework
+ol,
+ul,
+ul li,
+ol li,
+li {
+  padding: 0px;
+  margin: 0px;
+}
+ul.checkList{
+  li{
+    position: relative;
+    padding-left: rem( 25px);
+    font-size: rem( 16px);
+    line-height: rem( 22px);
+    margin-bottom: rem( 12px);
+    @include mq-tablet{
+      font-size: rem( 18px);
+      line-height: rem( 22px);
+      margin-bottom: rem( 16px);
+    }
+    @include mq-desktop{
+      font-size: rem( 18px);
+      line-height: rem( 22px);
+      margin-bottom: rem( 16px);
+    }
+    &::before{
+      position: absolute;
+      left: 0;
+      content: "";
+      background: url('/c/tienda/tol/static/img/modules/icons/svg/check-icon.svg') no-repeat center center;
+      display: inline-block;
+      height: 0.9375rem;
+      margin-right: 0.3125rem;
+      vertical-align: middle;
+      width: 1.25rem;
+    }
+  }
+}

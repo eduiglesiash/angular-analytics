@@ -1,0 +1,8 @@
+.modal--flex {
+  .nsm-body {
+    @include flexbox();
+    @include flex-direction(column);
+
+    &>div+* {}
+  }
+}

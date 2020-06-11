@@ -1,0 +1,214 @@
+a:focus {
+  outline: none;
+  border-bottom: rem(2px) solid #e60000;
+  .mouse-active & {
+    border-bottom: none;
+  }
+  
+   img {
+     border-bottom: rem(2px) solid #e60000;
+     .mouse-active & {
+      border-bottom: none;
+      }
+   }
+   svg{
+     color: #e60000;
+     .mouse-active & {
+        color: currentColor;
+      }
+   }
+}
+button:focus,
+.vfes-button:focus,
+.vfes-tabs__tab-button:focus {
+  outline: none;
+  border-bottom: rem(2px) solid #e60000;
+  .mouse-active & {
+    border-bottom: none;
+  }
+  &.vfes-button--tertiary{
+    .mouse-active & {
+      border-bottom: rem(1px) solid #000000;
+    }
+  }
+  &.vfes-tabs__tab-active{
+    outline: none;
+    border-bottom: rem(2px) solid #000000;
+    .mouse-active & {
+      border-bottom: none;
+    }
+  }
+  .stock-container &{
+    border-bottom: rem(2px) solid #e60000;
+    .mouse-active & { 
+      border-bottom: rem(1px) solid #333333;
+    }
+  }
+}
+.vfms-button__terciary  {
+  .vfes-button.vfes-button--tertiary{
+      &:focus {
+          .mouse-active & {
+              border-bottom: rem(1px) solid #333333;
+          }
+      }
+  }
+}
+.vfes-button--primary:focus, .vfes-button.add-tv-window__offer-button:focus, .button-submit:focus {
+  outline: none;
+  border-bottom: rem(2px) solid #000000;
+  .mouse-active & {
+    outline: none;
+    border-bottom: none;
+  }
+}
+
+input:focus {
+  outline: none;
+  border-bottom: solid 0.125rem #e60000;
+  .mouse-active & {
+    border-bottom: none;
+  }
+}
+
+a:active, a:focus,
+button:active, button:focus,
+.vfes-button:active, .vfes-button:focus,
+input:active, input:focus,
+.vfes-accordion__heading:focus {
+  outline: none;
+
+}
+
+//formularios material
+.mat-focused {
+  position: relative;
+  .mat-form-field-flex {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      left: .2rem;
+      width: 98%;
+      display: block;
+      height: 0.125rem;
+      background-color: #e60000;
+    }
+    .mouse-active & {
+      outline: none;
+      border-bottom: none;
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+.vfes-title a:focus{
+  border-bottom: none;
+  outline: none;
+}
+.swiper-button-prev, .swiper-button-next {
+  &:focus {
+    outline: none;
+    box-shadow: 0 rem(3px) 0 #e60000;
+  }
+}
+.c2c-buttons__item{
+  position: relative;
+  &:focus {
+    outline: none;
+    &:before{
+      content: "";
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-bottom: rem(2px) solid #e60000;
+      .mouse-active & {
+        border-bottom: none;
+      }
+    }
+  }
+}
+.inner-link {
+  position: relative; 
+  a:focus{
+    outline: none;
+    &:before{
+      content: "";
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      border-bottom: rem(2px) solid #e60000;
+      .mouse-active & {
+        border-bottom: none;
+      }
+    }
+  }
+}
+.mat-expansion-panel-header.cdk-focused.cdk-keyboard-focused {
+  border-bottom: rem(2px) solid #e60000;
+}
+.mouse-active {
+
+  input:focus {
+    //outline: #007c92 solid 3px;
+    outline: none;
+    position: relative;
+    border: none ;
+    &[type="radio"] {
+      border: solid rem(1px) #e60000;
+    }
+  }
+
+  .let-me-now__checkboxes {
+    input:focus {
+      border: solid 0.0625rem #999999 !important;
+    }
+  }
+  .show-conditions {
+    #openConditionsRateList{
+      &:focus {
+        text-decoration-color: #333333;
+      }
+    }
+  }
+
+  .swiper-container {
+    button:focus {
+      position: absolute;
+    }
+  }
+  .add-lines-counter__button.vfes-card__counter-button {
+    &:focus {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    }
+  }
+  .mat-expansion-panel-header.cdk-focused.cdk-keyboard-focused {
+    border-bottom: none;
+  }
+}
+
+.mat-form-field-infix {
+  input:focus {
+    //outline: #007c92 solid 3px;
+    outline: none;
+    position: relative;
+    border: none !important;
+
+  }
+}
+
+ftol-delivery-hour-picker, ftol-instalation-hour-picker {
+  mat-select:focus {
+    .mat-select-trigger {
+      .mat-select-arrow-wrapper {
+        position: relative;
+        top: rem(2px);
+        right: rem(11px);
+        border-bottom: rem(2px) solid map-get($colors, dark-red);
+        }
+      }
+    }
+}
+

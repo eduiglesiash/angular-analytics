@@ -1,0 +1,9 @@
+.ftol-strike {
+
+  @each $k,
+  $v in $colors {
+    &--#{$k} {
+      text-decoration-color: $v !important;
+    }
+  }
+}
