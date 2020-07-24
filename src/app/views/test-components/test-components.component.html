@@ -2,7 +2,10 @@
   <h1>Pagina de testeo de componentes</h1>
 
   <div appSvgSpritesheet [version]="'sprite.v3.svg'"></div>
-
+  <div appSvgSpritesheet [version]="'sprite.mid.svg'"></div>
+  <div appSvgSpritesheet [version]="'sprite.mva10.svg'"></div>
+  <hr>
+  <h2>Icono</h2>
   <mva10-c-icon
     [size]="64"
     [title]="'icon-4g'"
@@ -10,6 +13,7 @@
   </mva10-c-icon>
 
   <hr>
+  <h2>Carrusel continuo + filter</h2>
   <mva10-c-carousel-continuous>
     <mva10-c-carousel-item>
       <mva10-c-filter
@@ -40,4 +44,39 @@
       </mva10-c-filter>
     </mva10-c-carousel-item>
   </mva10-c-carousel-continuous>
+
+  <hr>
+  <h2>Select Field</h2>
+  <form action="">
+    <mva10-c-select-field
+      [label]="'Etiqueta'"
+      [listItems]="listItem"
+      [preselectedValue]="'val2'"
+      (clickEvent)="clickEvent($event)"
+      (validate)="validateEvent($event)"
+      (changeSelect)="changeSelectEvent($event)"
+      [ngModel]="valueInput"
+    ></mva10-c-select-field>
+  </form>
+
+
+  <hr>
+  <h2>Example</h2>
+  <mva10-c-card>
+    <mva10-vertical-bar
+      [maxValue]="100"
+      [minValue]="1"
+      [value]="25"
+      [fixedHeight]="{'height': '100px'}"
+    >
+      <mva10-vertical-bar
+        [maxValue]="100"
+        [minValue]="1"
+        [value]="25"
+        [fixedHeight]="{'height': '100px'}"
+      >
+        <span>2019</span>
+      </mva10-vertical-bar>
+    </mva10-vertical-bar>
+  </mva10-c-card>
 </section>
